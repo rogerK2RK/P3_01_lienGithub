@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2? famille =Shrikhand&display = swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto:wght@300&display=swap");
+.titre-typo {
+  font-family: 'Shrikhand', cursif;
+}
+
+.texte-typo {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0px;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0px;
+  background: #e0e0e0;
+  -webkit-box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
+          box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
+}
+
+.localisation__picto {
+  font-size: 15px;
+  padding: 19px;
+}
+
+.localisation__text {
+  font-size: 1.1rem;
+}
+
+body {
+  margin: 0%;
+}
+
+.logo {
+  width: 60%;
+}
+
+.slogan-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.slogan-title__titre {
+  font-size: 30px;
+}
+
+.slogan-title__slogan {
+  font-size: 1rem;
+}
+
+.div-bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bouton {
+  padding: 15px 32px;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 40px;
+  border: 0px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.bloc-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-section {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-boxe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border-radius: 22px;
+  background: #e0e0e0;
+  padding: 0px 20px;
+  -webkit-box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+          box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  margin-bottom: 20px;
+}
+
+.nav-boxe__number {
+  font-size: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  background-color: #9356DC;
+  border: 1px solid #9356DC;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.nav-boxe__picto {
+  font-size: 25px;
+  padding: 20px;
+  color: gray;
+}
+
+.nav-boxe__text {
+  font-size: 1rem;
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-boxe:active {
+  background: #9356DC;
+}
+
+li::marker {
+  border: 1px solid black;
+}
+
+.titre-bloc {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=main.css.map */

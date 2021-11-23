@@ -1,0 +1,103 @@
+@import "./layouts/header";
+@import "./base/typography";
+@import "./outils/mixins";
+@import "./outils/variables";
+
+header{
+    @include centrer-flx;
+    padding: 15px 0px;
+}
+
+.localisation{
+    @include centrer-flx;
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe,
+            inset -2px -2px 5px #ffffff;
+        &__picto{
+            font-size: 15px;
+            padding: 19px;
+        }
+        &__text{
+            font-size: 1.1rem;
+        }
+}
+body{
+    margin: 0%;
+}
+
+.logo{
+    width: 60%;
+}
+
+.slogan-title{
+    @include centrer-flx;
+    text-align: center;
+        &__titre{
+            font-size: 30px;
+        }
+        &__slogan{
+            font-size: 1rem;
+        }
+}
+.div-bouton{
+    @include centrer-flx;
+}
+.bouton{
+    padding: 15px 32px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 40px;
+    border: 0px;
+    color: #fff;
+    background: linear-gradient( $color-secondary,$color-primary);
+}
+.bloc-nav{
+    @include centrer-flx;
+}
+.nav-section{
+    padding: 0px;
+    @include centrer-flx;
+}
+.nav-boxe{
+    @include centrer-flx;
+    text-decoration: none;
+    border-radius: 22px;
+    background: #e0e0e0;
+    padding: 0px 20px;
+    box-shadow:  4px 4px 10px #bebebe,
+             -4px -4px 10px #ffffff;
+    margin-bottom: 20px;
+        &__number{
+            font-size: 0.8rem;
+            align-items: center;
+            display: flex;
+            color: #fff;
+            background-color: $color-primary;
+            border: 1px solid $color-primary;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        &__picto{
+            font-size: 25px;
+            padding: 20px;
+            color: gray;
+        }
+        &__text{
+            font-size: 1rem;
+            color: #000;
+            align-items: center;
+            display: flex;
+        }
+        &:active{
+            background: $color-primary;
+        }
+        
+}
+li::marker{
+    border: 1px solid black;
+}
+
+.titre-bloc{
+    padding-left: 20px;
+}
