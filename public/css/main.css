@@ -119,6 +119,7 @@ body {
   -webkit-box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
           box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
   margin-bottom: 20px;
+  width: 74%;
 }
 
 .nav-boxe__number {
