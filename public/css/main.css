@@ -155,7 +155,7 @@ body {
 }
 
 .nav-boxe:active {
-  background: #9356DC;
+  background: #f2eafb;
 }
 
 li::marker {
@@ -164,5 +164,76 @@ li::marker {
 
 .titre-bloc {
   padding-left: 20px;
+}
+
+.container-restau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restau {
+  width: 85%;
+  border-radius: 8%;
+  margin-bottom: 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+}
+
+.restau__image {
+  width: 100%;
+  border-radius: 8% 8% 0% 0%;
+}
+
+.restau__content {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*align-items: flex-end;*/
+}
+
+.restau__content__titre {
+  margin: 10px 0px 0px;
+}
+
+.restau__content__place {
+  margin-top: 0px;
+}
+
+.restau__content__blocpicto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.restau__content__picto {
+  color: #9356DC;
+  font-size: 25px;
+}
+
+.restau__content__picto:hover {
+  display: none;
+}
+
+.restau__content__picto-active {
+  display: none;
+  font-size: 25px;
+  color: #000;
+  /*color: linear-gradient( $color-primary, $color-secondary);*/
 }
 /*# sourceMappingURL=main.css.map */
