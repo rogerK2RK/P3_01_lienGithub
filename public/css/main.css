@@ -4,11 +4,11 @@
   margin: 0px;
   color: #fff;
   padding: 15px 0px 0px 15px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .bloc-footer {
-  background-color: black;
+  background-color: #333333;
 }
 
 .bloc-footer__line {
@@ -20,16 +20,18 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 15px;
+  color: #fff;
+  margin: 0px;
+  font-size: 0.8rem;
 }
 
 .bloc-footer__line__picto {
-  color: #fff;
+  font-size: 11px;
 }
 
 .bloc-footer__line__text {
   margin: 0px;
   padding-left: 10px;
-  color: #fff;
 }
 
 .titre-typo {

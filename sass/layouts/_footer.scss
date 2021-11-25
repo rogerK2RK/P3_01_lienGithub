@@ -2,22 +2,24 @@
     margin: 0px;
     color: #fff;
     padding: 15px 0px 0px 15px ;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .bloc-footer{
-    background-color: black;
+    background-color: lighten(black, 20%) ;
     &__line{
         padding-left: 15px;
         display: flex;
         align-items: center;
         padding-bottom: 15px;
+        color: #fff;
+        margin: 0px;
+        font-size: 0.8rem;
         &__picto{
-            color:#fff;
+            font-size: 11px; 
         }
         &__text{
             margin: 0px;
             padding-left: 10px;
-            color: #fff;
         }
     }
 }
