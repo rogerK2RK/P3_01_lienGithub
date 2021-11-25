@@ -1,3 +1,16 @@
-footer{
-    background-color: darken($color-grey, 40%);
+.bloc-footer{
+    background-color: black;
+    &__line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        &__picto{
+            padding: 15px;
+            color:#fff;
+        &__text{
+            margin-left: 5px;
+            color: #fff;
+        }
+    }
 }
