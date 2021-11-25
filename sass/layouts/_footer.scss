@@ -1,15 +1,22 @@
+.text-logo{
+    margin: 0px;
+    color: #fff;
+    padding: 15px 0px 0px 15px ;
+    margin-bottom: 30px;
+}
 .bloc-footer{
     background-color: black;
     &__line{
+        padding-left: 15px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding-bottom: 15px;
         &__picto{
-            padding: 15px;
             color:#fff;
+        }
         &__text{
-            margin-left: 5px;
+            margin: 0px;
+            padding-left: 10px;
             color: #fff;
         }
     }
