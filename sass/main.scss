@@ -111,6 +111,7 @@ li::marker{
 .container-restau{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container{
@@ -119,15 +120,29 @@ li::marker{
 
 .restau{
     width: 85%;
-    border-radius: 8%;
+    border-radius: 10px;
     margin-bottom: 30px;
     background: #ffffff;
     box-shadow:  5px 5px 10px #ebebeb,
                  -5px -5px 10px #ffffff;
-        &__image{
-            width: 100%;
-            border-radius: 8% 8% 0% 0%;
+        &__boxe{
+            display: flex;
+            justify-content: flex-end;
+            &__image{
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+            &__notif{
+                position:absolute;
+                background-color: $color-tectiaire;
+                color: darken($color-tectiaire, 50%);
+                padding: 8px;
+                border-radius: 2px;
+                margin: 10px;
+                font-size: 00.8rem;
+            }
         }
+        
         &__content{
             padding-left: 20px;
             display: flex;

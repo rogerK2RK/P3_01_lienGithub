@@ -180,6 +180,8 @@ li::marker {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container {
@@ -188,16 +190,35 @@ li::marker {
 
 .restau {
   width: 85%;
-  border-radius: 8%;
+  border-radius: 10px;
   margin-bottom: 30px;
   background: #ffffff;
   -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
 }
 
-.restau__image {
+.restau__boxe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.restau__boxe__image {
   width: 100%;
-  border-radius: 8% 8% 0% 0%;
+  border-radius: 10px 10px 0 0;
+}
+
+.restau__boxe__notif {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 8px;
+  border-radius: 2px;
+  margin: 10px;
+  font-size: 00.8rem;
 }
 
 .restau__content {
