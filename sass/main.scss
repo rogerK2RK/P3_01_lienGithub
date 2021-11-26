@@ -76,6 +76,7 @@ body{
     margin-bottom: 20px;
     width: 74%;
         &__number{
+            position:absolute;
             font-size: 0.8rem;
             align-items: center;
             display: flex;
