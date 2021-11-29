@@ -3,3 +3,5 @@ $color-secondary:#FF79DA;
 $color-tectiaire:#99E2D0;
 $color-grey: gray;
 $color-grey-light: lighten($color-grey, 47%);
+$color-degrader-verse1: linear-gradient( $color-secondary,$color-primary);
+$color-degrader-verse2: linear-gradient($color-primary,$color-secondary);

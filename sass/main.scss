@@ -5,67 +5,114 @@
 @import "./outils/variables";
 
 header{
+
     @include centrer-flx;
     padding: 15px 0px;
+
 }
+
 .logo{
+  
     width: 60%;
+
 }
+
 .localisation{
+
     @include centrer-flx;
     border-radius: 0px;
     background: #e0e0e0;
     box-shadow: inset 5px 5px 10px #bebebe,
             inset -2px -2px 5px #ffffff;
-        &__picto{
+
+            &__picto{
             font-size: 15px;
             padding: 19px;
+
         }
+
         &__text{
+
             font-size: 1.1rem;
+
         }
+
 }
+
 body{
+
     margin: 0%;
+
 }
 
 .bloc-section{
+
     padding: 30px 0px;
     background: $color-grey-light;
+
 }
+
 .slogan-title{
+
     @include centrer-flx;
     text-align: center;
-        &__titre{
-            margin: 0px 0px 20px 0px;
-            font-size: 30px;
-            font-weight: bold;
-        }
-        &__slogan{
-            margin: 0px 0px 20px 0px;
-            font-size: 1rem;
-        }
+
+    &__titre{
+
+        margin: 0px 0px 20px 0px;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    &__slogan{
+
+        margin: 0px 0px 20px 0px;
+        font-size: 1rem;
+
+    }
+
 }
+
 .div-bouton{
+
     @include centrer-flx;
+
 }
+
 .bouton{
+
     padding: 15px 32px;
     font-size: 1.2rem;
     text-align: center;
     border-radius: 40px;
     border: 0px;
     color: #fff;
-    background: linear-gradient( $color-secondary,$color-primary);
+    background: $color-degrader-verse1;
+
+    &:hover{
+
+        background: $color-degrader-verse2;
+
+    }
+
 }
+
 .bloc-nav{
+
     @include centrer-flx;
+
 }
+
 .nav-section{
+
     padding: 0px;
     @include centrer-flx;
+
 }
+
 .nav-boxe{
+
     @include centrer-flx;
     text-decoration: none;
     border-radius: 22px;
@@ -75,78 +122,111 @@ body{
              -4px -4px 10px #ffffff;
     margin-bottom: 20px;
     width: 74%;
-        &__number{
-            position:absolute;
-            font-size: 0.8rem;
-            align-items: center;
-            display: flex;
-            color: #fff;
-            background-color: $color-primary;
-            border: 1px solid $color-primary;
-            border-radius: 50%;
-            padding: 5px;
-        }
-        &__picto{
-            font-size: 25px;
-            padding: 20px;
-            color: gray;
-        }
-        &__text{
-            font-size: 1rem;
-            color: #000;
-            align-items: center;
-            display: flex;
-            font-weight: bold;
-        }
-        &:active{
-            background: lighten($color-primary, 35%);
-        }
+    position: relative;
+
+    &__number{
+
+        height: 15px;
+        width: 15px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position:absolute;
+        left: -11px;
+        border-radius: 15px;
+        color: #fff;
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+        padding: 5px;
+
+    }
+
+    &__picto{
+
+        font-size: 25px;
+        padding: 20px;
+        color: $color-primary;
+
+    }
+
+    &__text{
+
+        font-size: 1rem;
+        color: #000;
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+
+    }
+
+    &:hover{
+
+        background: lighten($color-primary, 35%);
+
+    }
         
 }
 
 .titre-bloc{
+
     padding-left: 20px;
+
 }
 
 .container-restau{
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .container{
+
     background-color: $color-grey-light;
+
 }
 
 .restau{
+
     width: 85%;
     border-radius: 10px;
     margin-bottom: 30px;
     background: #ffffff;
     box-shadow:  5px 5px 10px #ebebeb,
                  -5px -5px 10px #ffffff;
-        &__boxe{
-            display: flex;
-            justify-content: flex-end;
-            &__image{
-                width: 100%;
-                border-radius: 10px 10px 0 0;
-                height: 181.35px;
-                object-fit: cover;
-            }
-            &__notif{
-                position:absolute;
-                background-color: $color-tectiaire;
-                color: darken($color-tectiaire, 50%);
-                padding: 8px;
-                border-radius: 2px;
-                margin: 10px;
-                font-size: 00.8rem;
-                font-weight: bold;
-            }
+
+     &__boxe{
+    
+        display: flex;
+        justify-content: flex-end;
+
+        &__image{
+
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            height: 181.35px;
+            object-fit: cover;
+
         }
+
+        &__notif{
+
+            position:absolute;
+            background-color: $color-tectiaire;
+            color: darken($color-tectiaire, 50%);
+            padding: 8px;
+            border-radius: 2px;
+            margin: 10px;
+            font-size: 00.8rem;
+            font-weight: bold;
+
+        }
+
+    }
         
         &__content{
+
             padding-left: 20px;
             display: flex;
             justify-content: space-between;
@@ -164,17 +244,16 @@ body{
                     margin-right: 20px;
                 }
                 &__picto{
-                    color: $color-primary;
+
                     font-size: 25px;
-                    &:hover{
-                        display: none;
+                    color: $color-degrader-verse2;
+
+                    &:hover {
+
+                        font-weight: 900;
+                        
+
                     }
-                }
-                &__picto-active{
-                    display: none;
-                    font-size: 25px;
-                    color: #000;
-                    /*color: linear-gradient( $color-primary, $color-secondary);*/
                 }
 
         }
