@@ -102,9 +102,6 @@ body{
         }
         
 }
-li::marker{
-    border: 1px solid black;
-}
 
 .titre-bloc{
     padding-left: 20px;
@@ -144,6 +141,7 @@ li::marker{
                 border-radius: 2px;
                 margin: 10px;
                 font-size: 00.8rem;
+                font-weight: bold;
             }
         }
         

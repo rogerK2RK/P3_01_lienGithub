@@ -4,6 +4,7 @@
     padding: 15px 0px 0px 15px ;
     margin-bottom: 20px;
 }
+
 .bloc-footer{
     background-color: lighten(black, 20%) ;
     &__line{
@@ -20,6 +21,9 @@
         &__text{
             margin: 0px;
             padding-left: 10px;
+            &--bold{
+                font-weight: bold;
+            }
         }
     }
 }

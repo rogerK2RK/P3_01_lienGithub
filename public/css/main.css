@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2? famille =Shrikhand&display = swap");
-@import url("https://fonts.googleapis.com/css2? family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 .text-logo {
   margin: 0px;
   color: #fff;
@@ -19,7 +19,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   color: #fff;
   margin: 0px;
   font-size: 0.8rem;
@@ -32,6 +32,10 @@
 .bloc-footer__line__text {
   margin: 0px;
   padding-left: 10px;
+}
+
+.bloc-footer__line__text--bold {
+  font-weight: bold;
 }
 
 .titre-typo {
@@ -164,6 +168,7 @@ body {
 }
 
 .nav-boxe__number {
+  position: absolute;
   font-size: 0.8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -197,10 +202,6 @@ body {
 
 .nav-boxe:active {
   background: #f2eafb;
-}
-
-li::marker {
-  border: 1px solid black;
 }
 
 .titre-bloc {
@@ -256,6 +257,7 @@ li::marker {
   border-radius: 2px;
   margin: 10px;
   font-size: 00.8rem;
+  font-weight: bold;
 }
 
 .restau__content {
