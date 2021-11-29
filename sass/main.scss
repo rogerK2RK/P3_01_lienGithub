@@ -3,6 +3,11 @@
 @import "./base/typography";
 @import "./outils/mixins";
 @import "./outils/variables";
+@import "./pages/menupage";
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
 
 header{
 
@@ -120,7 +125,6 @@ body{
 
 .nav-boxe{
 
-    
     text-decoration: none;
     border-radius: 22px;
     background: $color-grey-light;
@@ -130,7 +134,6 @@ body{
     margin-bottom: 20px;
     width: 74%;
     position: relative;
-    $self: &;
 
     &__number{
 
@@ -206,12 +209,8 @@ body{
 
 .restau{
 
-    width: 85%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    background: #ffffff;
-    box-shadow:  5px 5px 10px #ebebeb,
-                 -5px -5px 10px #ffffff;
+    @include box-shadow;
+    
 
         &__link{
             text-decoration: none;
@@ -278,3 +277,5 @@ body{
         }
 
 }
+
+    
