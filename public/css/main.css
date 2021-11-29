@@ -60,8 +60,12 @@ header {
   padding: 15px 0px;
 }
 
+.link-logo {
+  text-align: center;
+}
+
 .logo {
-  width: 60%;
+  width: 40%;
 }
 
 .localisation {
@@ -83,7 +87,8 @@ header {
 }
 
 .localisation__text {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 body {
@@ -106,7 +111,7 @@ body {
 }
 
 .slogan-title__titre {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
   font-size: 30px;
   font-weight: bold;
 }
@@ -148,6 +153,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 12px;
 }
 
 .nav-section {
@@ -161,12 +167,6 @@ body {
 }
 
 .nav-boxe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-decoration: none;
   border-radius: 22px;
   background: #f8f8f8;
@@ -192,6 +192,7 @@ body {
   display: flex;
   position: absolute;
   left: -11px;
+  top: -3px;
   border-radius: 15px;
   color: #fff;
   background-color: #9356DC;
@@ -200,9 +201,12 @@ body {
 }
 
 .nav-boxe__picto {
-  font-size: 25px;
+  font-size: 18px;
   padding: 20px;
-  color: #9356DC;
+  color: gray;
+  position: absolute;
+  left: 13px;
+  top: -3px;
 }
 
 .nav-boxe__text {
@@ -219,6 +223,10 @@ body {
 
 .nav-boxe:hover {
   background: #f2eafb;
+}
+
+.nav-boxe:hover__picto {
+  color: #9356DC;
 }
 
 .titre-bloc {
@@ -247,6 +255,11 @@ body {
   background: #ffffff;
   -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+}
+
+.restau__link {
+  text-decoration: none;
+  color: black;
 }
 
 .restau__boxe {
@@ -285,7 +298,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*align-items: flex-end;*/
+  position: relative;
 }
 
 .restau__content__titre {
@@ -296,22 +309,12 @@ body {
   margin-top: 0px;
 }
 
-.restau__content__blocpicto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 20px;
-}
-
 .restau__content__picto {
+  position: absolute;
+  right: 17px;
+  bottom: 31px;
   font-size: 25px;
-  color: linear-gradient(#9356DC, #FF79DA);
+  color: #9356DC;
 }
 
 .restau__content__picto:hover {

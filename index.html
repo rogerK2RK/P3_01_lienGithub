@@ -10,7 +10,9 @@
 </head>
 <body>
     <header>
-        <img src="public/images/logo/ohmyfood.png" alt="#" class="logo">
+        <a href="index.html" class="link-logo">
+            <img src="public/images/logo/ohmyfood.png" alt="#" class="logo">
+        </a>
     </header>
     <div class="localisation">
         <i class="fas fa-map-marker-alt localisation__picto"></i>
@@ -18,7 +20,7 @@
     </div>
     <section class="bloc-section">
         <h1 class="texte-typo slogan-title slogan-title__titre">Réserver le menu qui vous convient</h1>
-        <p class="texte-typo slogan-title slogan-title__slogan ">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <p class="texte-typo slogan-title slogan-title__slogan ">Découvrez des restaurants d'exception,<br> séléctionnés par nos soins.</p>
         <div class="div-bouton">
             <input class="bouton texte-typo" type="button" value="Explorer nos restaurants">
         </div>
@@ -26,7 +28,7 @@
     <nav>
         <h2 class="texte-typo titre-bloc">Fonctionnement</h2>
         <div class="nav-section">
-            <a href="#" class="nav-boxe" >
+            <a href="sass/pages/MenuLaPaletteduGoût.html" class="nav-boxe" >
                 <div class="bloc-nav">
                     <p class="nav-boxe__number">1</p>
                     <i class="fas fa-mobile-alt nav-boxe__picto"></i>
@@ -56,70 +58,68 @@
     <section class="bloc-section">
         <h2 class="titre-bloc texte-typo">Restaurants</h2>
         <div class="container-restau"> 
-            <a href="pages/Menu"></a>
             <article class="restau">
-                <div class="restau__boxe">
-                    <p class="restau__boxe__notif texte-typo">Nouveau</p>
-                    <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#" class="restau__boxe__image">
-                </div>
-                
-                <div class="restau__content">
-                    <div>
-                        <h3 class="restau__content__titre texte-typo">La palette du goût</h3>
-                        <p class="restau__content__place texte-typo">Ménilmontant</p>
+                <a href="pages/Menu" class="restau__link">
+                    <div class="restau__boxe">
+                        <p class="restau__boxe__notif texte-typo">Nouveau</p>
+                        <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#" class="restau__boxe__image">
                     </div>
-                    <div class="restau__content__blocpicto">
-                        <i class="far fa-heart restau__content__picto"></i>
+                    
+                    <div class="restau__content">
+                        <div>
+                            <h3 class="restau__content__titre texte-typo">La palette du goût</h3>
+                            <p class="restau__content__place texte-typo">Ménilmontant</p>
+                        </div>
+                            <i class="far fa-heart restau__content__picto"></i>
                     </div>
-                </div>
+                </a>
+            </article>
+            
+            <article class="restau">
+                <a href="" class="restau__link">
+                    <div class="restau__boxe">
+                        <p class="restau__boxe__notif texte-typo">Nouveau</p>
+                        <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#" class="restau__boxe__image">
+                    </div>
+                    
+                    <div class="restau__content">
+                        <div>
+                            <h3 class="restau__content__titre texte-typo">La note enchantée</h3>
+                            <p class="restau__content__place texte-typo">Charonne</p>
+                        </div>
+                            <i class="far fa-heart restau__content__picto"></i>
+                    </div>
+                </a>
             </article>
             <article class="restau">
-                <div class="restau__boxe">
-                    <p class="restau__boxe__notif texte-typo">Nouveau</p>
-                    <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#" class="restau__boxe__image">
-                </div>
-                
-                <div class="restau__content">
-                    <div>
-                        <h3 class="restau__content__titre texte-typo">La palette du goût</h3>
-                        <p class="restau__content__place texte-typo">Ménilmontant</p>
+                <a href="" class="restau__link">
+                    <div class="restau__boxe">
+                        <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="#" class="restau__boxe__image">
                     </div>
-                    <div class="restau__content__blocpicto">
+                    
+                    <div class="restau__content">
+                        <div>
+                            <h3 class="restau__content__titre texte-typo">A la française</h3>
+                            <p class="restau__content__place texte-typo">Cité Rouge</p>
+                        </div>
                         <i class="far fa-heart restau__content__picto"></i>
                     </div>
-                </div>
+                </a>
             </article>
             <article class="restau">
-                <div class="restau__boxe">
-                    <!--<p class="restau__boxe__notif texte-typo">Nouveau</p>-->
-                    <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="#" class="restau__boxe__image">
-                </div>
-                
-                <div class="restau__content">
-                    <div>
-                        <h3 class="restau__content__titre texte-typo">La palette du goût</h3>
-                        <p class="restau__content__place texte-typo">Ménilmontant</p>
+                <a href="" class="restau__link">
+                    <div class="restau__boxe">
+                        <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="#" class="restau__boxe__image">
                     </div>
-                    <div class="restau__content__blocpicto">
+                    
+                    <div class="restau__content">
+                        <div>
+                            <h3 class="restau__content__titre texte-typo">Le délice des sens</h3>
+                            <p class="restau__content__place texte-typo">Folie-Méricourt</p>
+                        </div>
                         <i class="far fa-heart restau__content__picto"></i>
                     </div>
-                </div>
-            </article>
-            <article class="restau">
-                <div class="restau__boxe">
-                    <!--<p class="restau__boxe__notif texte-typo">Nouveau</p>-->
-                    <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="#" class="restau__boxe__image">
-                </div>
-                
-                <div class="restau__content">
-                    <div>
-                        <h3 class="restau__content__titre texte-typo">La palette du goût</h3>
-                        <p class="restau__content__place texte-typo">Ménilmontant</p>
-                    </div>
-                    <div class="restau__content__blocpicto">
-                        <i class="far fa-heart restau__content__picto"></i>
-                    </div>
-                </div>
+                </a>
             </article>
         </div>
     </section>

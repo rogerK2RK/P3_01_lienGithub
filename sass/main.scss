@@ -11,9 +11,15 @@ header{
 
 }
 
+.link-logo{
+
+    text-align: center;
+
+}
+
 .logo{
   
-    width: 60%;
+    width: 40%;
 
 }
 
@@ -33,7 +39,8 @@ header{
 
         &__text{
 
-            font-size: 1.1rem;
+            font-size: 1rem;
+            font-weight: bold;
 
         }
 
@@ -59,7 +66,7 @@ body{
 
     &__titre{
 
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 10px 0px;
         font-size: 30px;
         font-weight: bold;
 
@@ -99,8 +106,8 @@ body{
 }
 
 .bloc-nav{
-
     @include centrer-flx;
+    padding-left: 12px;
 
 }
 
@@ -113,7 +120,7 @@ body{
 
 .nav-boxe{
 
-    @include centrer-flx;
+    
     text-decoration: none;
     border-radius: 22px;
     background: $color-grey-light;
@@ -123,6 +130,7 @@ body{
     margin-bottom: 20px;
     width: 74%;
     position: relative;
+    $self: &;
 
     &__number{
 
@@ -133,6 +141,7 @@ body{
         display: flex;
         position:absolute;
         left: -11px;
+        top: -3px;
         border-radius: 15px;
         color: #fff;
         background-color: $color-primary;
@@ -143,9 +152,13 @@ body{
 
     &__picto{
 
-        font-size: 25px;
+        font-size: 18px;
         padding: 20px;
-        color: $color-primary;
+        color: $color-grey;
+        position: absolute;
+        left: 13px;
+        top: -3px;
+        
 
     }
 
@@ -162,6 +175,10 @@ body{
     &:hover{
 
         background: lighten($color-primary, 35%);
+        
+        &__picto {
+            color: $color-primary;
+        }
 
     }
         
@@ -196,7 +213,12 @@ body{
     box-shadow:  5px 5px 10px #ebebeb,
                  -5px -5px 10px #ffffff;
 
-     &__boxe{
+        &__link{
+            text-decoration: none;
+            color: black;
+        }
+    
+        &__boxe{
     
         display: flex;
         justify-content: flex-end;
@@ -230,23 +252,20 @@ body{
             padding-left: 20px;
             display: flex;
             justify-content: space-between;
-            /*align-items: flex-end;*/
+            position: relative;
                 &__titre{
                     margin:10px 0px 0px;
                 }
                 &__place{
                     margin-top:  0px;
                 }
-                &__blocpicto{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 20px;
-                }
                 &__picto{
 
+                    position: absolute;
+                    right: 17px;
+                    bottom: 31px;
                     font-size: 25px;
-                    color: $color-degrader-verse2;
+                    color: $color-primary;
 
                     &:hover {
 
