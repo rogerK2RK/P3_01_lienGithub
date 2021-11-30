@@ -11,12 +11,20 @@
 }
     
 .image-menu{
+
     width: 100%;
+
 }
 
 .container{
 
     position: relative;
+
+    &__menus{
+
+        position: absolute;
+        bottom: 120px;
+    }
 
 }
 

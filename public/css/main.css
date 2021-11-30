@@ -66,6 +66,10 @@
   width: 100%;
 }
 
+.container {
+  position: relative;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
