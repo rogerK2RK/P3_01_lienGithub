@@ -70,6 +70,22 @@
   position: relative;
 }
 
+.container__menus {
+  position: absolute;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #fff;
+  bottom: -119px;
+}
+
+.titre-menus {
+  position: relative;
+}
+
+.titre-menus__picto {
+  position: absolute;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
