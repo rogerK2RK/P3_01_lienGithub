@@ -67,11 +67,13 @@ header{
     &__titre{
         color: gray;
         padding-bottom: 10px;
+        text-decoration: underline #99E2D0;
         margin: 0px;
     }
 
     &__souligner{
         margin: 0px;
+        width: 20px;
     }
 
     &__bloc{
