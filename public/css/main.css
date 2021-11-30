@@ -50,6 +50,17 @@
   font-weight: bold;
 }
 
+.tete-de-page {
+  position: relative;
+  text-decoration: none;
+}
+
+.tete-de-page__picto {
+  position: absolute;
+  color: black;
+  left: 24px;
+  top: 19px;
+}
 
 .image-menu {
   width: 100%;
@@ -86,10 +97,8 @@ header {
           justify-content: center;
   border-radius: 0px;
   background: #e0e0e0;
-  -webkit-box-shadow: inset 5px 5px 10px #bebebe,
- inset -2px -2px 5px #ffffff;
-          box-shadow: inset 5px 5px 10px #bebebe,
- inset -2px -2px 5px #ffffff;
+  -webkit-box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
+          box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
 }
 
 .localisation__picto {
@@ -182,10 +191,8 @@ body {
   border-radius: 22px;
   background: #f8f8f8;
   padding: 0px 20px;
-  -webkit-box-shadow: 4px 4px 10px #bebebe,
- -4px -4px 10px #ffffff;
-          box-shadow: 4px 4px 10px #bebebe,
- -4px -4px 10px #ffffff;
+  -webkit-box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+          box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
   margin-bottom: 20px;
   width: 74%;
   position: relative;
@@ -266,10 +273,8 @@ body {
   border-radius: 10px;
   margin-bottom: 30px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px #ebebeb,
- -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ebebeb,
- -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
 }
 
 .restau__link {
