@@ -1,57 +1,18 @@
-
 .tete-de-page{
-    margin-top: 10px;
     position: relative;
-    padding-bottom: 10px;
-
-    &__picto{
-
-        position: absolute;
-        top: 19px;
-        left: 30px;
-        color: #000;
-
-    }
-
-}
-.image-menu{
-
-    width: 100%;
-        
-}
-
-
-.container{
+    text-decoration: none;
     
-    position: relative;
-
-    &__menu{
-
-        background-color: $color-grey-light;
+    &__picto{
         position: absolute;
-        top: 178px;
-        border-radius: 38px;
-        padding: 0px 20px;
-
-        &__boct-tete{
-
-            display: flex;
-            position: relative;
-
-            &__picto{
-
-                position: absolute;
-                top: 30px;
-                right: 20px;
-
-            }
-
-        }
-        &__entrees{
-            @include box-shadow;
-            padding: 10px;
-        }
-
+        color: black;
+        left: 24px;
+       top:19px;
     }
-
 }
+    
+.image-menu{
+    width: 100%;
+}
+
+
+

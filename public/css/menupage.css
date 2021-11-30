@@ -1,42 +1,15 @@
 .tete-de-page {
-  margin-top: 10px;
   position: relative;
-  padding-bottom: 10px;
+  text-decoration: none;
 }
 
 .tete-de-page__picto {
   position: absolute;
-  top: 19px;
-  left: 30px;
-  color: #000;
+  color: black;
+  left: 20px;
 }
 
 .image-menu {
   width: 100%;
-}
-
-.container {
-  position: relative;
-}
-
-.container__menu {
-  background-color: #fff;
-  position: absolute;
-  top: 178px;
-  border-radius: 38px;
-  padding: 0px 20px;
-}
-
-.container__menu__boct-tete {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.container__menu__boct-tete__picto {
-  position: absolute;
-  top: 30px;
-  right: 20px;
 }
 /*# sourceMappingURL=menupage.css.map */
