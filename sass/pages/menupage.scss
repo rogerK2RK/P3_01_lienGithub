@@ -1,8 +1,15 @@
+body{
+    position: relative;
+}
+header{
+    position: fixed;
 
 
+}
 .tete-de-page{
     position: relative;
     text-decoration: none;
+    top: 0px;
     
     &__picto{
         position: absolute;
@@ -25,7 +32,7 @@
     &__menus{
 
         position: absolute;
-        bottom: -1076px;
+        bottom: -1240px;
         width: 100%;
         border-radius: 30px 30px 0px 0px;
         background-color: lighten(gray, 47%);
@@ -72,6 +79,7 @@
         text-decoration: none;
         color: #000;
         display: flex;
+        justify-content: space-between;
         width: 100%;
         padding: 10px;
         border-radius: 10px;
@@ -86,14 +94,27 @@
         
         &__line{
             margin: 0px;
+            &__name{
+                font-size: 1rem;
+            }
+            &__commentair{
+                font-size: 0.9rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &__prix{
             font-weight: bold;
-            padding-top: 23px;
+            padding-top: 20px;
             width: 10%;
+            font-size: 0.9rem;
         }
     }
 
 }
 
-
+.bouton-menu{
+    margin-bottom: 50px;
+    text-align: center;
+}
