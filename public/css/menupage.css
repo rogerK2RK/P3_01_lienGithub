@@ -2,10 +2,6 @@ body {
   position: relative;
 }
 
-header {
-  position: fixed;
-}
-
 .tete-de-page {
   position: relative;
   text-decoration: none;
