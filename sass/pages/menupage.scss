@@ -58,6 +58,11 @@ header{
 .bloc-content-menu{
     display: flex;
     justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #ebebeb,
+                    -5px -5px 10px #ffffff;
 }
 
 .menu{
@@ -82,41 +87,65 @@ header{
         color: #000;
         display: flex;
         justify-content: space-between;
-        width: 100%;
         padding: 10px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        background: #ffffff;
-        box-shadow:  5px 5px 10px #ebebeb,
-                    -5px -5px 10px #ffffff;
+    
+        &:hover + .boxe-picto{
+            transform: scaleX(1);
+        }
         
         &__texte{
             width: 90%;
         }
         
         &__line{
+
             margin: 0px;
+
             &__name{
+
                 font-size: 1rem;
+
             }
+
             &__commentair{
+
                 font-size: 0.9rem;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+
             }
+
         }
+
         &__prix{
+
             font-weight: bold;
             padding-top: 20px;
             width: 10%;
             font-size: 0.9rem;
+
         }
+
     }
+}
+
+
+.boxe-picto{
+        
+    border-radius: 0px 10px 10px 0px;
+    background-color: #99E2D0;
+    padding: 20px;
+    transform-origin: right 0%;
+    transform: scaleX(0);
+    transition: transform 1000ms cubic-bezier(.32,0,.07,1);
 
 }
 
+
 .bouton-menu{
+
     margin-bottom: 50px;
     text-align: center;
+
 }
