@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 .text-logo {
   margin: 0px;
   color: #fff;
@@ -224,7 +224,7 @@ header {
 
 .localisation__picto {
   font-size: 15px;
-  padding: 19px;
+  padding: 19px 10px;
 }
 
 .localisation__text {
@@ -254,7 +254,6 @@ body {
 .slogan-title__titre {
   margin: 0px 0px 10px 0px;
   font-size: 30px;
-  font-weight: bold;
 }
 
 .slogan-title__slogan {
@@ -320,8 +319,8 @@ body {
 }
 
 .nav-boxe__number {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -366,7 +365,7 @@ body {
   background: #f2eafb;
 }
 
-.nav-boxe:hover__picto {
+.nav-boxe:hover .nav-boxe__picto {
   color: #9356DC;
 }
 
@@ -455,10 +454,14 @@ body {
   right: 17px;
   bottom: 31px;
   font-size: 25px;
-  color: #9356DC;
+  color: gray;
 }
 
 .restau__content__picto:hover {
   font-weight: 900;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

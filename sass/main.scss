@@ -35,10 +35,10 @@ header{
     background: #e0e0e0;
     box-shadow: inset 5px 5px 10px #bebebe,
             inset -2px -2px 5px #ffffff;
-            
+
             &__picto{
             font-size: 15px;
-            padding: 19px;
+            padding: 19px 10px;
 
         }
 
@@ -73,7 +73,6 @@ body{
 
         margin: 0px 0px 10px 0px;
         font-size: 30px;
-        font-weight: bold;
 
     }
 
@@ -137,8 +136,8 @@ body{
 
     &__number{
 
-        height: 15px;
-        width: 15px;
+        height: 12px;
+        width: 12px;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -175,11 +174,11 @@ body{
 
     }
 
-    &:hover{
+    &:hover {
 
         background: lighten($color-primary, 35%);
-        
-        &__picto {
+
+        & .nav-boxe__picto{
             color: $color-primary;
         }
 
@@ -264,12 +263,14 @@ body{
                     right: 17px;
                     bottom: 31px;
                     font-size: 25px;
-                    color: $color-primary;
+                    color: $color-grey;
 
                     &:hover {
 
                         font-weight: 900;
-                        
+                        background: linear-gradient(#9356DC, #FF79DA);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color:transparent;
 
                     }
                 }
