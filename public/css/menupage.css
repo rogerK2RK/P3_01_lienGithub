@@ -46,9 +46,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 10px;
   margin-bottom: 30px;
   background: #ffffff;
@@ -74,6 +71,7 @@ body {
 }
 
 .menu__bloc {
+  width: 91%;
   text-decoration: none;
   color: #000;
   display: -webkit-box;

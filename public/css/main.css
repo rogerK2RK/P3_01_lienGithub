@@ -27,6 +27,11 @@
 
 .bloc-footer__line__picto {
   font-size: 11px;
+  width: 11px;
+}
+
+.bloc-footer__line__picto-litle {
+  font-size: 9px;
 }
 
 .bloc-footer__line__text {
@@ -50,6 +55,8 @@
   font-weight: bold;
 }
 
+/*$col-light-prim:lighten($color-primary, 40%);*/
+/*$col-light-sec: lighten($color-secondary, 40%);*/
 body {
   position: relative;
 }
@@ -98,9 +105,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 10px;
   margin-bottom: 30px;
   background: #ffffff;
@@ -126,6 +130,7 @@ body {
 }
 
 .menu__bloc {
+  width: 91%;
   text-decoration: none;
   color: #000;
   display: -webkit-box;
@@ -272,18 +277,26 @@ body {
 
 .bouton {
   padding: 15px 32px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   border-radius: 40px;
   border: 0px;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 5px 5px 14px #b8b8b8, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #b8b8b8, -5px -5px 14px #ffffff;
 }
 
 .bouton:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
+  background: linear-gradient(#ff88de, #9b63df);
+  -webkit-box-shadow: 5px 5px 14px #929292, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #929292, -5px -5px 14px #ffffff;
+}
+
+nav {
+  margin-top: 50px;
 }
 
 .bloc-nav {
@@ -391,7 +404,7 @@ body {
 .restau {
   width: 85%;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background: #ffffff;
   -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
@@ -422,7 +435,7 @@ body {
 .restau__boxe__notif {
   position: absolute;
   background-color: #99E2D0;
-  color: #1b6150;
+  color: #2c9c81;
   padding: 8px;
   border-radius: 2px;
   margin: 10px;

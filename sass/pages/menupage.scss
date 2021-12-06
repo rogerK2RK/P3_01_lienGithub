@@ -53,7 +53,6 @@ body{
 
 .bloc-content-menu{
     display: flex;
-    justify-content: center;
     border-radius: 10px;
     margin-bottom: 30px;
     background: #ffffff;
@@ -79,6 +78,7 @@ body{
 
     &__bloc{
 
+        width: 91%;
         text-decoration: none;
         color: #000;
         display: flex;

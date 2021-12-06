@@ -94,19 +94,27 @@ body{
 .bouton{
 
     padding: 15px 32px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     border-radius: 40px;
     border: 0px;
     color: #fff;
     background: $color-degrader-verse1;
+    box-shadow:  5px 5px 14px #b8b8b8,
+             -5px -5px 14px #ffffff;
 
     &:hover{
 
-        background: $color-degrader-verse2;
+        background: $color-hover-degrader;
+        box-shadow:  5px 5px 14px #929292,
+             -5px -5px 14px #ffffff;
 
     }
 
+}
+
+nav{
+    margin-top: 50px;
 }
 
 .bloc-nav{
@@ -216,7 +224,7 @@ body{
             color: black;
         }
     
-        &__boxe{
+    &__boxe{
     
         display: flex;
         justify-content: flex-end;
@@ -234,7 +242,7 @@ body{
 
             position:absolute;
             background-color: $color-tectiaire;
-            color: darken($color-tectiaire, 50%);
+            color: darken($color-tectiaire, 35%);
             padding: 8px;
             border-radius: 2px;
             margin: 10px;

@@ -1,7 +1,10 @@
 $color-primary:#9356DC;
+/*$col-light-prim:lighten($color-primary, 40%);*/
 $color-secondary:#FF79DA;
+/*$col-light-sec: lighten($color-secondary, 40%);*/
 $color-tectiaire:#99E2D0;
 $color-grey: gray;
 $color-grey-light: lighten($color-grey, 47%);
 $color-degrader-verse1: linear-gradient( $color-secondary,$color-primary);
+$color-hover-degrader: linear-gradient(lighten($color-secondary, 3%), lighten($color-primary, 3%));
 $color-degrader-verse2: linear-gradient($color-primary,$color-secondary);
