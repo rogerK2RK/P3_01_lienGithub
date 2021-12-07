@@ -8,3 +8,6 @@ $color-grey-light: lighten($color-grey, 47%);
 $color-degrader-verse1: linear-gradient( $color-secondary,$color-primary);
 $color-hover-degrader: linear-gradient(lighten($color-secondary, 3%), lighten($color-primary, 3%));
 $color-degrader-verse2: linear-gradient($color-primary,$color-secondary);
+$breakpoints: (
+  mobile: 768px
+);
