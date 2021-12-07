@@ -101,6 +101,14 @@ body {
   top: 45px;
 }
 
+.titre-menus__picto:hover {
+  font-weight: 900;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .bloc-content-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,6 +416,23 @@ nav {
   background: #ffffff;
   -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+  position: relative;
+}
+
+.restau__picto {
+  position: absolute;
+  right: 17px;
+  bottom: 31px;
+  font-size: 25px;
+  color: gray;
+}
+
+.restau__picto:hover {
+  font-weight: 900;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restau__link {
@@ -451,7 +476,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
 .restau__content__titre {
@@ -460,21 +484,5 @@ nav {
 
 .restau__content__place {
   margin-top: 0px;
-}
-
-.restau__content__picto {
-  position: absolute;
-  right: 17px;
-  bottom: 31px;
-  font-size: 25px;
-  color: gray;
-}
-
-.restau__content__picto:hover {
-  font-weight: 900;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

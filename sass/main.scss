@@ -217,12 +217,31 @@ nav{
 .restau{
 
     @include box-shadow;
-    
+    position: relative;
 
-        &__link{
-            text-decoration: none;
-            color: black;
+    &__picto{
+
+        position: absolute;
+        right: 17px;
+        bottom: 31px;
+        font-size: 25px;
+        color: $color-grey;
+
+        &:hover {
+
+            font-weight: 900;
+            background: linear-gradient(#9356DC, #FF79DA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent;
+
         }
+    }
+
+    &__link{
+
+        text-decoration: none;
+        color: black;
+    }
     
     &__boxe{
     
@@ -258,30 +277,14 @@ nav{
             padding-left: 20px;
             display: flex;
             justify-content: space-between;
-            position: relative;
+            
                 &__titre{
                     margin:10px 0px 0px;
                 }
                 &__place{
                     margin-top:  0px;
                 }
-                &__picto{
-
-                    position: absolute;
-                    right: 17px;
-                    bottom: 31px;
-                    font-size: 25px;
-                    color: $color-grey;
-
-                    &:hover {
-
-                        font-weight: 900;
-                        background: linear-gradient(#9356DC, #FF79DA);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color:transparent;
-
-                    }
-                }
+                
 
         }
 
