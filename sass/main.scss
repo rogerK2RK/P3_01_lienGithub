@@ -13,18 +13,17 @@
 
     @include centrer-flx;
     padding: 15px 0px;
-
-}
-
-.link-logo{
-
     text-align: center;
+    
 
 }
 
 .logo{
   
     width: 40%;
+    @media (min-width: 768) {
+        width: 30%;
+    }
 
 }
 
@@ -225,7 +224,6 @@ nav{
         right: 17px;
         bottom: 31px;
         font-size: 25px;
-        color: $color-grey;
 
         &:hover {
 

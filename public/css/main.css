@@ -212,14 +212,17 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px 0px;
-}
-
-.link-logo {
   text-align: center;
 }
 
 .logo {
   width: 40%;
+}
+
+@media (min-width: 768) {
+  .logo {
+    width: 30%;
+  }
 }
 
 .localisation {
@@ -424,7 +427,6 @@ nav {
   right: 17px;
   bottom: 31px;
   font-size: 25px;
-  color: gray;
 }
 
 .restau__picto:hover {
