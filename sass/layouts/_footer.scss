@@ -1,33 +1,73 @@
 .text-logo{
+
     margin: 0px;
     color: #fff;
     padding: 15px 0px 0px 15px ;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+
+    @media all and (min-width:992px) {
+
+        padding-top: 0px;
+
+    }
+
 }
 
 .bloc-footer{
     background-color: lighten(black, 20%) ;
+
+    @media all and (min-width:768px) {
+
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0px;
+
+    }
+
     &__line{
+
         padding-left: 15px;
         display: flex;
         align-items: center;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         color: #fff;
         margin: 0px;
         font-size: 0.8rem;
+
+        @media all and (min-width:768px) {
+
+            font-size: 0.6em;
+
+        }
+
         &__picto{
-            font-size: 11px; 
+
+            font-size: 8px; 
             width: 11px;
+
         }
+
         &__picto-litle{
-            font-size: 9px;
+
+            font-size: 7px;
+            width: 11px;
+
         }
+
         &__text{
+
             margin: 0px;
             padding-left: 10px;
+
             &--bold{
+
                 font-weight: bold;
+
             }
+
         }
+
     }
+
 }
+

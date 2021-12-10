@@ -9,24 +9,56 @@
     font-family: 'Roboto', sans-serif;
 }
 
+heade{
+    height: 44,74px;
+}
+
+@media all and (min-width:768px){
+
+    .tetedepage{
+
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+
+    }
+
+}
+
 .link-logo{
 
+    @include centrer-flx;
+    padding: 15px 0px;
+    text-align: center;    
     
 
-    /*@media all and (max-width:768px){*/
+        @media all and (min-width:768px){
 
-        @include centrer-flx;
-        padding: 15px 0px;
-        text-align: center;
-   /* }*/
+            padding-left: 30px;
+            padding-bottom: 0px;
+            display: flex;
+            justify-content: flex-start;
+        
+        }
+
+    &__menu{
+
+        @media all and (min-width:768px){
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+    }
 
 }
 
 .logo{
   
     width: 40%;
-    @media (min-width: 768) {
-        width: 30%;
+    @media all and (min-width:768px) {
+        width: 85px;
     }
 
 }
@@ -38,10 +70,26 @@
     background: #e0e0e0;
     box-shadow: inset 5px 5px 10px #bebebe,
             inset -2px -2px 5px #ffffff;
+    
+    @media all and (min-width:768px) {
+
+        justify-content: flex-start;
+        background: none;
+        box-shadow: none;
+        padding: 0px 30px;
+
+    }
 
             &__picto{
             font-size: 15px;
             padding: 19px 10px;
+
+            @media all and (min-width:768px) {
+
+                font-size: 9px;
+                padding: 20px 5px 0px 5px;
+
+            }
 
         }
 
@@ -49,6 +97,14 @@
 
             font-size: 1rem;
             font-weight: bold;
+
+            @media all and (min-width:768px) {
+                font-size: 9px;
+                display: flex;
+                align-items: flex-end;
+                margin: 0px;
+                font-weight: lighter;
+            }
 
         }
 
@@ -64,6 +120,24 @@ body{
 
     padding: 30px 0px;
     background: $color-grey-light;
+    @media all and (min-width:768px) {
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    &__article{
+
+        width: 100%;
+
+        @media all and (min-width:768px) {
+
+            /*width: 70%;*/
+        
+        }
+    
+    }
+
 
 }
 
@@ -72,17 +146,41 @@ body{
     @include centrer-flx;
     text-align: center;
 
+    @media all and (min-width:768px) {
+
+        text-align: left;
+        justify-content: left;
+        padding-left: 15px;
+
+    }
+
     &__titre{
 
         margin: 0px 0px 10px 0px;
         font-size: 30px;
 
+        @media all and (min-width:768px) {
+
+            font-size: 15px;
+            margin: 0px;
+
+        }
+
+    }
+    @media all and (min-width:768px) {
+        br{
+            display: none;
+        }
     }
 
     &__slogan{
 
         margin: 0px 0px 20px 0px;
         font-size: 1rem;
+
+        @media all and (min-width:768px) {
+            font-size: 0.6rem;
+        }
 
     }
 
@@ -105,6 +203,14 @@ body{
     background: $color-degrader-verse1;
     box-shadow:  5px 5px 14px #b8b8b8,
              -5px -5px 14px #ffffff;
+    
+    @media all and (min-width:768px) {
+
+        padding: 7px 16px;
+        font-size: 0.6rem;
+
+
+    }
 
     &:hover{
 
@@ -116,11 +222,36 @@ body{
 
 }
 
-nav{
+/*@media all and (min-width:768px) {
+
+    .big-container{
+
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    
+}*/
+@media all and (min-width:768px) {
+    .navigation{
+        display: flex;
+    }
+}
+.navigation-sect-bloc{
+
     margin-top: 50px;
+
+    @media all and (min-width:768px) {
+
+        margin-top: 0px;
+        padding: 0px 15px;
+
+    }
+
 }
 
 .bloc-nav{
+
     @include centrer-flx;
     padding-left: 12px;
 
@@ -130,6 +261,12 @@ nav{
 
     padding: 0px;
     @include centrer-flx;
+
+    @media all and (min-width:768px) {
+
+        width: 33%;
+
+    }
 
 }
 
@@ -160,6 +297,15 @@ nav{
         background-color: $color-primary;
         border: 1px solid $color-primary;
         padding: 5px;
+    
+        @media all and (min-width:768px) {
+
+            height: 8px;
+            width: 8px;
+            left: -7px;
+            top: -4px;
+
+        }
 
     }
 
@@ -172,6 +318,13 @@ nav{
         left: 13px;
         top: -3px;
         
+        @media all and (min-width:768px) {
+
+            font-size: 10px;
+            padding: 14px;
+            left: 21px;
+
+        }
 
     }
 
@@ -182,6 +335,10 @@ nav{
         align-items: center;
         display: flex;
         font-weight: bold;
+
+        @media all and (min-width:768px) {
+            font-size: 0.6rem;
+        }
 
     }
 
@@ -208,6 +365,12 @@ nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
+    @media all and (min-width:768px) {
+
+        justify-content: space-around;
+
+    }
 
 }
 
@@ -222,12 +385,26 @@ nav{
     @include box-shadow;
     position: relative;
 
+    @media all and (min-width:768px) {
+
+        width: 23%;
+
+    }
+
     &__picto{
 
         position: absolute;
         right: 17px;
         bottom: 31px;
         font-size: 25px;
+
+        @media all and (min-width:768px) {
+
+            right: 10px;
+            bottom: 20px;
+            font-size: 16px;
+
+        }
 
         &:hover {
 
@@ -257,6 +434,12 @@ nav{
             height: 181.35px;
             object-fit: cover;
 
+            @media all and (min-width:768px) {
+
+                height: 80px;
+
+            }
+
         }
 
         &__notif{
@@ -270,27 +453,46 @@ nav{
             font-size: 00.8rem;
             font-weight: bold;
 
+            @media all and (min-width:768px) {
+
+                font-size: 0.5rem;
+
+            }
+
         }
 
     }
         
-        &__content{
+    &__content{
 
-            padding-left: 20px;
-            display: flex;
-            justify-content: space-between;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
             
-                &__titre{
-                    margin:10px 0px 0px;
+        &__titre{
+
+            margin:10px 0px 0px;
+
+            @media all and (min-width:768px) {
+
+                font-size: 0.8em;
+
                 }
-                &__place{
-                    margin-top:  0px;
-                }
-                
 
         }
 
+        &__place{
+
+            margin-top:  0px;
+
+        }
+                
+
+    }
+
+}
+.titre-partie{
+    font-size: 1.2em;
 }
 
-    
 

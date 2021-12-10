@@ -3,15 +3,30 @@ body{
 }
 
 .tete-de-page{
+
     position: relative;
     text-decoration: none;
     top: 0px;
+
+    @media all and (min-width:768px) {
+
+        height: 44.74px;
+
+    }
     
     &__picto{
+
         position: absolute;
         color: black;
         left: 24px;
        top:19px;
+
+        @media all and (min-width:768px) {
+
+            top: 14px;
+
+        }
+
     }
 }
     
@@ -20,6 +35,12 @@ body{
     height: 260px;
     width: 100%;
     object-fit: cover;
+
+    @media all and (min-width:768px) {
+
+        height: 100px;
+
+    }
 
 }
 
@@ -34,11 +55,29 @@ body{
         width: 100%;
         border-radius: 30px 30px 0px 0px;
         background-color: lighten(gray, 47%);
+
+        @media all and (min-width:768px) {
+
+            bottom: -537px;
+
+        }
         
         &__lanoteencht{
             bottom: -1372px;
         }
         
+    }
+
+}
+
+
+@media all and (min-width:768px) {
+
+    .boxe-glob-menu{
+
+        display: flex;
+        justify-content: space-around;
+
     }
 
 }
@@ -78,7 +117,14 @@ body{
 
     padding: 15px;
 
+    @media all and (min-width:768px) {
+
+    width: 30%;
+
+    }
+
     &__titre{
+        
         color: gray;
         padding-bottom: 10px;
         text-decoration: underline #99E2D0;
