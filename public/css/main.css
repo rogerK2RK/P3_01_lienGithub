@@ -205,6 +205,7 @@ body {
 }
 
 .link-logo {
+  /*@media all and (max-width:768px){*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,6 +214,7 @@ body {
           justify-content: center;
   padding: 15px 0px;
   text-align: center;
+  /* }*/
 }
 
 .logo {

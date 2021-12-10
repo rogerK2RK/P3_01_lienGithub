@@ -16,7 +16,10 @@ body {
 }
 
 .image-menu {
+  height: 260px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
@@ -29,6 +32,10 @@ body {
   width: 100%;
   border-radius: 30px 30px 0px 0px;
   background-color: #f8f8f8;
+}
+
+.container__menus__lanoteencht {
+  bottom: -1372px;
 }
 
 .titre-menus {

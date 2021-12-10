@@ -11,10 +11,14 @@
 
 .link-logo{
 
-    @include centrer-flx;
-    padding: 15px 0px;
-    text-align: center;
     
+
+    /*@media all and (max-width:768px){*/
+
+        @include centrer-flx;
+        padding: 15px 0px;
+        text-align: center;
+   /* }*/
 
 }
 
