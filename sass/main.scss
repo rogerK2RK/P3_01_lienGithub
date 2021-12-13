@@ -20,6 +20,8 @@ heade{
         display: flex;
         justify-content: space-between;
         padding-bottom: 15px;
+        background: #f8f8f8;
+        border-radius: 0px 0px 10px 10px;
 
     }
 
@@ -34,7 +36,7 @@ heade{
 
         @media all and (min-width:768px){
 
-            padding-left: 30px;
+            padding-left: 15px;
             padding-bottom: 0px;
             display: flex;
             justify-content: flex-start;
@@ -76,7 +78,7 @@ heade{
         justify-content: flex-start;
         background: none;
         box-shadow: none;
-        padding: 0px 30px;
+        padding: 0px 15px;
 
     }
 
@@ -120,10 +122,12 @@ body{
 
     padding: 30px 0px;
     background: $color-grey-light;
+
     @media all and (min-width:768px) {
         
         padding-top: 10px;
         padding-bottom: 10px;
+        background: none;
 
     }
     &__article{
@@ -132,7 +136,8 @@ body{
 
         @media all and (min-width:768px) {
 
-            /*width: 70%;*/
+            border-radius: 15px;
+            background: $color-grey-light;
         
         }
     
@@ -175,7 +180,7 @@ body{
 
     &__slogan{
 
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 15px 0px;
         font-size: 1rem;
 
         @media all and (min-width:768px) {
@@ -222,21 +227,30 @@ body{
 
 }
 
-/*@media all and (min-width:768px) {
+@media all and (min-width:768px) {
 
     .big-container{
 
         display: flex;
         flex-direction: row-reverse;
+        padding: 15px;
 
     }
     
-}*/
-@media all and (min-width:768px) {
-    .navigation{
-        display: flex;
-    }
 }
+
+@media all and (min-width:768px) {
+
+    .navigation{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+}
+
 .navigation-sect-bloc{
 
     margin-top: 50px;
@@ -244,7 +258,10 @@ body{
     @media all and (min-width:768px) {
 
         margin-top: 0px;
-        padding: 0px 15px;
+        padding: 10px 15px;
+        background: #f8f8f8;
+        border-radius: 15px;
+        margin-left: 15px;
 
     }
 
@@ -264,7 +281,8 @@ body{
 
     @media all and (min-width:768px) {
 
-        width: 33%;
+        width: 100%;
+        margin-bottom: 36px;
 
     }
 
@@ -387,7 +405,7 @@ body{
 
     @media all and (min-width:768px) {
 
-        width: 23%;
+        width: 45%;
 
     }
 

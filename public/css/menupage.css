@@ -40,13 +40,9 @@ body {
   }
 }
 
-.container {
-  position: relative;
-}
-
 .container__menus {
-  position: absolute;
-  bottom: -1296px;
+  position: relative;
+  bottom: 60px;
   width: 100%;
   border-radius: 30px 30px 0px 0px;
   background-color: #f8f8f8;
