@@ -50,12 +50,9 @@ body {
 
 @media all and (min-width: 768px) {
   .container__menus {
-    bottom: -537px;
+    position: relative;
+    bottom: 28px;
   }
-}
-
-.container__menus__lanoteencht {
-  bottom: -1372px;
 }
 
 @media all and (min-width: 768px) {

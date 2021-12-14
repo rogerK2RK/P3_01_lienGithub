@@ -138,16 +138,6 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  .container__menus {
-    bottom: -537px;
-  }
-}
-
-.container__menus__lanoteencht {
-  bottom: -1372px;
-}
-
-@media all and (min-width: 768px) {
   .boxe-glob-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -183,8 +173,10 @@ body {
   border-radius: 10px;
   margin-bottom: 30px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ebebeb,
+ -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ebebeb,
+ -5px -5px 10px #ffffff;
 }
 
 .menu {
@@ -349,8 +341,10 @@ heade {
           justify-content: center;
   border-radius: 0px;
   background: #e0e0e0;
-  -webkit-box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
-          box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
+  -webkit-box-shadow: inset 5px 5px 10px #bebebe,
+ inset -2px -2px 5px #ffffff;
+          box-shadow: inset 5px 5px 10px #bebebe,
+ inset -2px -2px 5px #ffffff;
 }
 
 @media all and (min-width: 768px) {
@@ -491,8 +485,10 @@ body {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 5px 5px 14px #b8b8b8, -5px -5px 14px #ffffff;
-          box-shadow: 5px 5px 14px #b8b8b8, -5px -5px 14px #ffffff;
+  -webkit-box-shadow: 5px 5px 14px #b8b8b8,
+ -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #b8b8b8,
+ -5px -5px 14px #ffffff;
 }
 
 @media all and (min-width: 768px) {
@@ -505,8 +501,10 @@ body {
 .bouton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
   background: linear-gradient(#ff88de, #9b63df);
-  -webkit-box-shadow: 5px 5px 14px #929292, -5px -5px 14px #ffffff;
-          box-shadow: 5px 5px 14px #929292, -5px -5px 14px #ffffff;
+  -webkit-box-shadow: 5px 5px 14px #929292,
+ -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #929292,
+ -5px -5px 14px #ffffff;
 }
 
 @media all and (min-width: 768px) {
@@ -581,8 +579,10 @@ body {
   border-radius: 22px;
   background: #f8f8f8;
   padding: 0px 20px;
-  -webkit-box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
-          box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  -webkit-box-shadow: 4px 4px 10px #bebebe,
+ -4px -4px 10px #ffffff;
+          box-shadow: 4px 4px 10px #bebebe,
+ -4px -4px 10px #ffffff;
   margin-bottom: 20px;
   width: 74%;
   position: relative;
@@ -693,8 +693,10 @@ body {
   border-radius: 10px;
   margin-bottom: 20px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ebebeb,
+ -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ebebeb,
+ -5px -5px 10px #ffffff;
   position: relative;
 }
 
