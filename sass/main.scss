@@ -4,6 +4,7 @@
 @import "./outils/mixins";
 @import "./outils/variables";
 @import "./pages/menupage";
+@import "./layouts/nav";
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -21,7 +22,6 @@ heade{
         justify-content: space-between;
         padding-bottom: 15px;
         background: #f8f8f8;
-        border-radius: 0px 0px 10px 10px;
 
     }
 
@@ -122,6 +122,10 @@ body{
 
     padding: 30px 0px;
     background: $color-grey-light;
+
+    &__soustitre{
+        padding: 30px 20px;
+    }
 
     @media all and (min-width:768px) {
         
@@ -237,139 +241,6 @@ body{
 
     }
     
-}
-
-@media all and (min-width:768px) {
-
-    .navigation{
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-
-}
-
-.navigation-sect-bloc{
-
-    margin-top: 50px;
-
-    @media all and (min-width:768px) {
-
-        margin-top: 0px;
-        padding: 10px 15px;
-        background: #f8f8f8;
-        border-radius: 15px;
-        margin-left: 15px;
-
-    }
-
-}
-
-.bloc-nav{
-
-    @include centrer-flx;
-    padding-left: 12px;
-
-}
-
-.nav-section{
-
-    padding: 0px;
-    @include centrer-flx;
-
-    @media all and (min-width:768px) {
-
-        width: 100%;
-        margin-bottom: 36px;
-
-    }
-
-}
-
-.nav-boxe{
-
-    text-decoration: none;
-    border-radius: 22px;
-    background: $color-grey-light;
-    padding: 0px 20px;
-    box-shadow:  4px 4px 10px #bebebe,
-             -4px -4px 10px #ffffff;
-    margin-bottom: 20px;
-    width: 74%;
-    position: relative;
-
-    &__number{
-
-        height: 12px;
-        width: 12px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        position:absolute;
-        left: -11px;
-        top: -3px;
-        border-radius: 15px;
-        color: #fff;
-        background-color: $color-primary;
-        border: 1px solid $color-primary;
-        padding: 5px;
-    
-        @media all and (min-width:768px) {
-
-            height: 8px;
-            width: 8px;
-            left: -7px;
-            top: -4px;
-
-        }
-
-    }
-
-    &__picto{
-
-        font-size: 18px;
-        padding: 20px;
-        color: $color-grey;
-        position: absolute;
-        left: 13px;
-        top: -3px;
-        
-        @media all and (min-width:768px) {
-
-            font-size: 10px;
-            padding: 14px;
-            left: 21px;
-
-        }
-
-    }
-
-    &__text{
-
-        font-size: 1rem;
-        color: #000;
-        align-items: center;
-        display: flex;
-        font-weight: bold;
-
-        @media all and (min-width:768px) {
-            font-size: 0.6rem;
-        }
-
-    }
-
-    &:hover {
-
-        background: lighten($color-primary, 35%);
-
-        & .nav-boxe__picto{
-            color: $color-primary;
-        }
-
-    }
-        
 }
 
 .titre-bloc{
@@ -509,8 +380,15 @@ body{
     }
 
 }
-.titre-partie{
-    font-size: 1.2em;
-}
 
+@media all and (min-width:768px) {
+
+    .titre-partie{
+
+        font-size: 1.2em;
+        margin: 0px;
+
+    }
+
+}
 

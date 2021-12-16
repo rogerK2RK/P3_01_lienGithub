@@ -59,7 +59,8 @@ body{
         @media all and (min-width:768px) {
 
             position: relative;
-            bottom: 28px;
+            bottom: 0px;
+            border-radius: 0px;
 
         }
         
@@ -104,7 +105,7 @@ body{
 .bloc-content-menu{
     display: flex;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     background: #ffffff;
     box-shadow:  5px 5px 10px #ebebeb,
                     -5px -5px 10px #ffffff;
@@ -126,6 +127,13 @@ body{
         padding-bottom: 10px;
         text-decoration: underline #99E2D0;
         margin: 0px;
+
+        @media all and (min-width:768px) {
+
+            font-size: 0.7rem;
+
+        }
+
     }
 
     &__souligner{
@@ -158,6 +166,12 @@ body{
 
                 font-size: 1rem;
 
+                @media all and (min-width:768px) {
+
+                    font-size: 00.7rem;
+
+                }
+
             }
 
             &__commentair{
@@ -166,6 +180,13 @@ body{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+
+
+                @media all and (min-width:768px) {
+
+                    font-size: 0.6rem;
+
+                }
 
             }
 
@@ -178,6 +199,13 @@ body{
             width: 10%;
             font-size: 0.9rem;
 
+            @media all and (min-width:768px) {
+
+                font-size: 0.6rem;
+                padding-top: 13px;
+
+            }
+
         }
 
     }
@@ -186,6 +214,7 @@ body{
 
 .boxe-picto{
         
+    display: none;
     border-radius: 0px 10px 10px 0px;
     background-color: #99E2D0;
     padding: 20px;

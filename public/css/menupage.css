@@ -51,7 +51,8 @@ body {
 @media all and (min-width: 768px) {
   .container__menus {
     position: relative;
-    bottom: 28px;
+    bottom: 0px;
+    border-radius: 0px;
   }
 }
 
@@ -89,7 +90,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background: #ffffff;
   -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
@@ -111,6 +112,12 @@ body {
   -webkit-text-decoration: underline #99E2D0;
           text-decoration: underline #99E2D0;
   margin: 0px;
+}
+
+@media all and (min-width: 768px) {
+  .menu__titre {
+    font-size: 0.7rem;
+  }
 }
 
 .menu__souligner {
@@ -148,11 +155,23 @@ body {
   font-size: 1rem;
 }
 
+@media all and (min-width: 768px) {
+  .menu__bloc__line__name {
+    font-size: 00.7rem;
+  }
+}
+
 .menu__bloc__line__commentair {
   font-size: 0.9rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media all and (min-width: 768px) {
+  .menu__bloc__line__commentair {
+    font-size: 0.6rem;
+  }
 }
 
 .menu__bloc__prix {
@@ -162,7 +181,15 @@ body {
   font-size: 0.9rem;
 }
 
+@media all and (min-width: 768px) {
+  .menu__bloc__prix {
+    font-size: 0.6rem;
+    padding-top: 13px;
+  }
+}
+
 .boxe-picto {
+  display: none;
   border-radius: 0px 10px 10px 0px;
   background-color: #99E2D0;
   padding: 20px;
