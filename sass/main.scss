@@ -10,8 +10,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
-heade{
+header{
+
     height: 44,74px;
+
+    @media all and (min-width:768px){
+
+        height: 80px;
+
+    }
+
 }
 
 @media all and (min-width:768px){
@@ -20,7 +28,7 @@ heade{
 
         display: flex;
         justify-content: space-between;
-        padding-bottom: 15px;
+        margin-bottom: 15px;
         background: #f8f8f8;
 
     }
@@ -36,7 +44,7 @@ heade{
 
         @media all and (min-width:768px){
 
-            padding-left: 15px;
+            padding-left: 34px;
             padding-bottom: 0px;
             display: flex;
             justify-content: flex-start;
@@ -60,7 +68,8 @@ heade{
   
     width: 40%;
     @media all and (min-width:768px) {
-        width: 85px;
+        width: 200px;
+        object-fit: contain;
     }
 
 }
@@ -88,8 +97,8 @@ heade{
 
             @media all and (min-width:768px) {
 
-                font-size: 9px;
-                padding: 20px 5px 0px 5px;
+                font-size: 15px;
+                padding: 33px 10px 0px 10px;
 
             }
 
@@ -101,9 +110,9 @@ heade{
             font-weight: bold;
 
             @media all and (min-width:768px) {
-                font-size: 9px;
+                font-size: 15px;
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 margin: 0px;
                 font-weight: lighter;
             }
@@ -170,7 +179,7 @@ body{
 
         @media all and (min-width:768px) {
 
-            font-size: 15px;
+            font-size: 25px;
             margin: 0px;
 
         }
@@ -188,7 +197,7 @@ body{
         font-size: 1rem;
 
         @media all and (min-width:768px) {
-            font-size: 0.6rem;
+            font-size: 1.3rem;
         }
 
     }
@@ -215,8 +224,8 @@ body{
     
     @media all and (min-width:768px) {
 
-        padding: 7px 16px;
-        font-size: 0.6rem;
+        padding: 15px 30px;
+        font-size: 1rem;
 
 
     }
@@ -238,6 +247,7 @@ body{
         display: flex;
         flex-direction: row-reverse;
         padding: 15px;
+        margin-bottom: 15px;
 
     }
     
@@ -258,6 +268,7 @@ body{
     @media all and (min-width:768px) {
 
         justify-content: space-around;
+        padding: 0px 15px;
 
     }
 
@@ -276,7 +287,7 @@ body{
 
     @media all and (min-width:768px) {
 
-        width: 45%;
+        width: 47%;
 
     }
 
@@ -291,7 +302,7 @@ body{
 
             right: 10px;
             bottom: 20px;
-            font-size: 16px;
+            font-size: 25px;
 
         }
 
@@ -325,7 +336,7 @@ body{
 
             @media all and (min-width:768px) {
 
-                height: 80px;
+                
 
             }
 
@@ -344,7 +355,7 @@ body{
 
             @media all and (min-width:768px) {
 
-                font-size: 0.5rem;
+                font-size: 1rem;
 
             }
 
@@ -364,7 +375,7 @@ body{
 
             @media all and (min-width:768px) {
 
-                font-size: 0.8em;
+                font-size: 1.3em;
 
                 }
 
@@ -373,6 +384,12 @@ body{
         &__place{
 
             margin-top:  0px;
+
+            @media all and (min-width:768px) {
+
+                font-size: 1.1rem;
+
+            }
 
         }
                 
@@ -385,8 +402,8 @@ body{
 
     .titre-partie{
 
-        font-size: 1.2em;
-        margin: 0px;
+        font-size: 1.6em;
+        margin: 15px 0px 25px 10px;
 
     }
 

@@ -10,7 +10,7 @@ body {
 
 @media all and (min-width: 768px) {
   .tete-de-page {
-    height: 44.74px;
+    height: 80px;
   }
 }
 
@@ -23,7 +23,7 @@ body {
 
 @media all and (min-width: 768px) {
   .tete-de-page__picto {
-    top: 14px;
+    top: 33px;
   }
 }
 
@@ -74,7 +74,8 @@ body {
 .titre-menus__picto {
   position: absolute;
   right: 30px;
-  top: 45px;
+  top: 38px;
+  font-size: 25px;
 }
 
 .titre-menus__picto:hover {
@@ -96,6 +97,13 @@ body {
           box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
 }
 
+hr {
+  border: 1px solid #99E2D0;
+  width: 37px;
+  background-color: #99E2D0;
+  margin: 0px 0px 15px 0px;
+}
+
 .menu {
   padding: 15px;
 }
@@ -108,10 +116,8 @@ body {
 
 .menu__titre {
   color: gray;
-  padding-bottom: 10px;
-  -webkit-text-decoration: underline #99E2D0;
-          text-decoration: underline #99E2D0;
   margin: 0px;
+  padding-bottom: 2px;
 }
 
 @media all and (min-width: 768px) {
