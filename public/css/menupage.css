@@ -151,6 +151,10 @@ hr {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
+  /*
+        &__texte{
+            width: 90%;
+        }*/
 }
 
 .menu__bloc:hover + .boxe-picto {
@@ -164,10 +168,6 @@ hr {
           transform: rotate(0deg);
 }
 
-.menu__bloc__texte {
-  width: 90%;
-}
-
 .menu__bloc__line {
   margin: 0px;
 }
@@ -179,6 +179,8 @@ hr {
 @media all and (min-width: 768px) {
   .menu__bloc__line__name {
     font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

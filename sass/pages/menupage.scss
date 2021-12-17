@@ -180,10 +180,10 @@ hr{
                 transform: rotate(0deg);
             }
         }
-        
+        /*
         &__texte{
             width: 90%;
-        }
+        }*/
         
         &__line{
 
@@ -196,6 +196,8 @@ hr{
                 @media all and (min-width:768px) {
 
                     font-size: 1.4rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
                 }
 

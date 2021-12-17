@@ -187,10 +187,8 @@ body {
   border-radius: 10px;
   margin-bottom: 15px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px #ebebeb,
- -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ebebeb,
- -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
 }
 
 hr {
@@ -228,7 +226,7 @@ hr {
 }
 
 .menu__bloc {
-  width: 91%;
+  width: 100%;
   text-decoration: none;
   color: #000;
   display: -webkit-box;
@@ -240,7 +238,16 @@ hr {
   padding: 10px;
 }
 
+.menu__bloc:hover + .boxe-picto {
+  width: 70px;
+  padding: 25px;
+}
 
+.menu__bloc:hover + .boxe-picto > .picto-anime {
+  font-size: 18px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 
 .menu__bloc__texte {
   width: 90%;
@@ -269,7 +276,7 @@ hr {
 
 @media all and (min-width: 768px) {
   .menu__bloc__line__commentair {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -282,14 +289,29 @@ hr {
 
 @media all and (min-width: 768px) {
   .menu__bloc__prix {
-    font-size: 1.4rem;
-    padding-top: 25px;
+    font-size: 1.3rem;
+    padding-top: 24px;
   }
 }
 
 .boxe-picto {
   border-radius: 0px 10px 10px 0px;
   background-color: #99E2D0;
+  -webkit-transform-origin: right 0%;
+          transform-origin: right 0%;
+  width: 0px;
+  -webkit-transition: width 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: width 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+}
+
+.boxe-picto .picto-anime {
+  font-size: 0px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
 .bouton-menu {
@@ -358,10 +380,8 @@ hr {
   border-radius: 22px;
   background: #f8f8f8;
   padding: 0px 20px;
-  -webkit-box-shadow: 4px 4px 10px #bebebe,
- -4px -4px 10px #ffffff;
-          box-shadow: 4px 4px 10px #bebebe,
- -4px -4px 10px #ffffff;
+  -webkit-box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+          box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
   margin-bottom: 15px;
   width: 74%;
   position: relative;
@@ -528,10 +548,8 @@ header {
           justify-content: center;
   border-radius: 0px;
   background: #e0e0e0;
-  -webkit-box-shadow: inset 5px 5px 10px #bebebe,
- inset -2px -2px 5px #ffffff;
-          box-shadow: inset 5px 5px 10px #bebebe,
- inset -2px -2px 5px #ffffff;
+  -webkit-box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
+          box-shadow: inset 5px 5px 10px #bebebe, inset -2px -2px 5px #ffffff;
 }
 
 @media all and (min-width: 768px) {
@@ -676,10 +694,8 @@ body {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 5px 5px 14px #b8b8b8,
- -5px -5px 14px #ffffff;
-          box-shadow: 5px 5px 14px #b8b8b8,
- -5px -5px 14px #ffffff;
+  -webkit-box-shadow: 5px 5px 14px #b8b8b8, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #b8b8b8, -5px -5px 14px #ffffff;
 }
 
 @media all and (min-width: 768px) {
@@ -693,10 +709,8 @@ body {
 .bouton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
   background: linear-gradient(#ff88de, #9b63df);
-  -webkit-box-shadow: 5px 5px 14px #929292,
- -5px -5px 14px #ffffff;
-          box-shadow: 5px 5px 14px #929292,
- -5px -5px 14px #ffffff;
+  -webkit-box-shadow: 5px 5px 14px #929292, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #929292, -5px -5px 14px #ffffff;
 }
 
 @media all and (min-width: 768px) {
@@ -745,10 +759,8 @@ body {
   border-radius: 10px;
   margin-bottom: 15px;
   background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px #ebebeb,
- -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ebebeb,
- -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
   position: relative;
 }
 
