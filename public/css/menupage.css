@@ -23,7 +23,8 @@ body {
 
 @media all and (min-width: 768px) {
   .tete-de-page__picto {
-    top: 33px;
+    top: 29px;
+    font-size: 30px;
   }
 }
 
@@ -36,7 +37,7 @@ body {
 
 @media all and (min-width: 768px) {
   .image-menu {
-    height: 100px;
+    height: 250px;
   }
 }
 
@@ -63,6 +64,14 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .titre-partie {
+    font-size: 1.8em;
+    margin: 15px 0px 25px 10px;
+    text-align: center;
   }
 }
 
@@ -122,7 +131,7 @@ hr {
 
 @media all and (min-width: 768px) {
   .menu__titre {
-    font-size: 0.7rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -132,7 +141,7 @@ hr {
 }
 
 .menu__bloc {
-  width: 91%;
+  width: 100%;
   text-decoration: none;
   color: #000;
   display: -webkit-box;
@@ -145,8 +154,14 @@ hr {
 }
 
 .menu__bloc:hover + .boxe-picto {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  width: 70px;
+  padding: 25px;
+}
+
+.menu__bloc:hover + .boxe-picto > .picto-anime {
+  font-size: 18px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .menu__bloc__texte {
@@ -163,7 +178,7 @@ hr {
 
 @media all and (min-width: 768px) {
   .menu__bloc__line__name {
-    font-size: 00.7rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -176,7 +191,7 @@ hr {
 
 @media all and (min-width: 768px) {
   .menu__bloc__line__commentair {
-    font-size: 0.6rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -189,24 +204,29 @@ hr {
 
 @media all and (min-width: 768px) {
   .menu__bloc__prix {
-    font-size: 0.6rem;
-    padding-top: 13px;
+    font-size: 1.3rem;
+    padding-top: 24px;
   }
 }
 
 .boxe-picto {
-  display: none;
   border-radius: 0px 10px 10px 0px;
   background-color: #99E2D0;
-  padding: 20px;
   -webkit-transform-origin: right 0%;
           transform-origin: right 0%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1), -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  width: 0px;
+  -webkit-transition: width 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: width 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+}
+
+.boxe-picto .picto-anime {
+  font-size: 0px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
 .bouton-menu {

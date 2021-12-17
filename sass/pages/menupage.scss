@@ -23,7 +23,8 @@ body{
 
         @media all and (min-width:768px) {
 
-            top: 33px;
+            top: 29px;
+            font-size: 30px;
 
         }
 
@@ -38,7 +39,7 @@ body{
 
     @media all and (min-width:768px) {
 
-        height: 100px;
+        height: 250px;
 
     }
 
@@ -75,6 +76,18 @@ body{
 
         display: flex;
         justify-content: space-around;
+
+    }
+
+}
+
+@media all and (min-width:768px) {
+
+    .titre-partie{
+
+        font-size: 1.8em;
+        margin: 15px 0px 25px 10px;
+        text-align: center;
 
     }
 
@@ -137,7 +150,7 @@ hr{
 
         @media all and (min-width:768px) {
 
-            font-size: 0.7rem;
+            font-size: 1.5rem;
 
         }
 
@@ -150,7 +163,7 @@ hr{
 
     &__bloc{
 
-        width: 91%;
+        width: 100%;
         text-decoration: none;
         color: #000;
         display: flex;
@@ -158,7 +171,14 @@ hr{
         padding: 10px;
     
         &:hover + .boxe-picto{
-            transform: scaleX(1);
+
+            width: 70px;
+            padding: 25px;
+
+            & > .picto-anime{
+                font-size: 18px;
+                transform: rotate(0deg);
+            }
         }
         
         &__texte{
@@ -175,7 +195,7 @@ hr{
 
                 @media all and (min-width:768px) {
 
-                    font-size: 00.7rem;
+                    font-size: 1.4rem;
 
                 }
 
@@ -191,7 +211,7 @@ hr{
 
                 @media all and (min-width:768px) {
 
-                    font-size: 0.6rem;
+                    font-size: 1.2rem;
 
                 }
 
@@ -208,8 +228,8 @@ hr{
 
             @media all and (min-width:768px) {
 
-                font-size: 0.6rem;
-                padding-top: 13px;
+                font-size: 1.3rem;
+                padding-top: 24px;
 
             }
 
@@ -221,13 +241,18 @@ hr{
 
 .boxe-picto{
         
-    display: none;
+    
     border-radius: 0px 10px 10px 0px;
     background-color: #99E2D0;
-    padding: 20px;
     transform-origin: right 0%;
-    transform: scaleX(0);
-    transition: transform 1000ms cubic-bezier(.32,0,.07,1);
+    width: 0px;
+    transition: width 1000ms cubic-bezier(.32,0,.07,1);
+
+    & .picto-anime{
+        font-size: 0px;
+        transform: rotate(360deg);
+        transition: transform 700ms ease-in-out;
+    }
 
 }
 

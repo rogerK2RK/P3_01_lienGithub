@@ -30,6 +30,7 @@ header{
         justify-content: space-between;
         margin-bottom: 15px;
         background: #f8f8f8;
+        padding-bottom: 15px;
 
     }
 
@@ -57,6 +58,7 @@ header{
 
             display: flex;
             justify-content: center;
+            padding-top: 25px;
 
         }
 
@@ -139,7 +141,7 @@ body{
     @media all and (min-width:768px) {
         
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         background: none;
 
     }
@@ -225,8 +227,8 @@ body{
     @media all and (min-width:768px) {
 
         padding: 15px 30px;
-        font-size: 1rem;
-
+        font-size: 1.3rem;
+        margin-top: 30px;
 
     }
 
@@ -398,14 +400,5 @@ body{
 
 }
 
-@media all and (min-width:768px) {
 
-    .titre-partie{
-
-        font-size: 1.6em;
-        margin: 15px 0px 25px 10px;
-
-    }
-
-}
 
