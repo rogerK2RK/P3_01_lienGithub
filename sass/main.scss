@@ -5,6 +5,7 @@
 @import "./outils/variables";
 @import "./pages/menupage";
 @import "./layouts/nav";
+@import"./vendors/animation";
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -22,15 +23,16 @@ header{
 
 }
 
+
 @media all and (min-width:768px){
 
     .tetedepage{
 
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
-        background: #f8f8f8;
+        background: $color-grey-light;
         padding-bottom: 15px;
+        margin-bottom: 25px
 
     }
 
@@ -80,27 +82,35 @@ header{
 
     @include centrer-flx;
     border-radius: 0px;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 10px #bebebe,
-            inset -2px -2px 5px #ffffff;
+    position: relative;
+    
     
     @media all and (min-width:768px) {
 
         justify-content: flex-start;
+        margin-left: 35px;
+        width: 342px;
         background: none;
         box-shadow: none;
-        padding: 0px 15px;
 
     }
 
-            &__picto{
-            font-size: 15px;
-            padding: 19px 10px;
+    &__picto{
+        font-size: 15px;
+        position: absolute;
+        left: 88px;
+        bottom: 21px;
 
             @media all and (min-width:768px) {
 
                 font-size: 15px;
-                padding: 33px 10px 0px 10px;
+                position: relative;
+                left: 0px;
+                bottom: 0px;
+                border-radius: 15px 0px 0px 15px;
+                padding: 5%;
+                background: $color-grey-light;
+
 
             }
 
@@ -109,14 +119,39 @@ header{
         &__text{
 
             font-size: 1rem;
-            font-weight: bold;
+            border: 0px;    
+            width: 100%;
+            
+            padding: 19px 0px;
+            text-align: center;
+            background: $color-grey-light;
+            box-shadow: inset 5px 5px 10px #d3d3d3,
+                inset -2px -2px 5px #d3d3d3;
 
             @media all and (min-width:768px) {
                 font-size: 15px;
                 display: flex;
                 align-items: center;
+                background-color: #fff;
+                border: solid 1px $color-grey-light;
+                box-shadow: none;
                 margin: 0px;
+                padding: 0px 10px;
+                font-size: 1.1rem;
                 font-weight: lighter;
+            }
+
+        }
+        &__bouton{
+            display: none;
+            @media all and (min-width:768px) {
+                display: block;
+                background-color: lighten($color-primary, 10%);
+                border: 0px;
+                border-radius: 0px 15px 15px 0px;
+                padding: 4%;
+                font-size: 1.1rem;
+                color: #fff;
             }
 
         }
@@ -160,6 +195,7 @@ body{
 
 
 }
+
 
 .slogan-title{
 

@@ -74,10 +74,6 @@ body{
 
     .boxe-glob-menu{
 
-        animation: fadein 3s;
-        -moz-animation: fadein 3s; /* Firefox */
-        -webkit-animation: fadein 3s; /* Safari and Chrome */
-        -o-animation: fadein 3s; /* Opera */
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
@@ -194,10 +190,10 @@ hr{
     
         }
 
-        /*
+        
         &__texte{
             width: 90%;
-        }*/
+        }
         
         &__line{
 
@@ -266,7 +262,7 @@ hr{
 
     & .picto-anime{
         font-size: 0px;
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
         transition: transform 700ms ease-in-out;
         
     }
@@ -280,35 +276,3 @@ hr{
 
 }
 
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
