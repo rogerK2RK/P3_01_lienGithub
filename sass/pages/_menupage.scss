@@ -74,8 +74,13 @@ body{
 
     .boxe-glob-menu{
 
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 3s; /* Opera */
+        flex-wrap: wrap;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
 
     }
 
@@ -113,16 +118,20 @@ body{
             -webkit-text-fill-color:transparent;
 
         }
+
     }
+
 }
 
 .bloc-content-menu{
+
     display: flex;
     border-radius: 10px;
     margin-bottom: 15px;
     background: #ffffff;
     box-shadow:  5px 5px 10px #ebebeb,
                     -5px -5px 10px #ffffff;
+
 }
 
 hr{
@@ -138,7 +147,7 @@ hr{
 
     @media all and (min-width:768px) {
 
-    width: 30%;
+    width: 60%;
 
     }
 
@@ -169,17 +178,22 @@ hr{
         display: flex;
         justify-content: space-between;
         padding: 10px;
-    
+
         &:hover + .boxe-picto{
 
             width: 70px;
-            padding: 25px;
-
+            padding: 25px 0px;
+            text-align: center;
+                
             & > .picto-anime{
+    
                 font-size: 18px;
                 transform: rotate(0deg);
+    
             }
+    
         }
+
         /*
         &__texte{
             width: 90%;
@@ -254,14 +268,47 @@ hr{
         font-size: 0px;
         transform: rotate(360deg);
         transition: transform 700ms ease-in-out;
+        
     }
 
 }
-
 
 .bouton-menu{
 
     margin-bottom: 50px;
     text-align: center;
 
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -59,11 +59,21 @@ body {
 
 @media all and (min-width: 768px) {
   .boxe-glob-menu {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari and Chrome */
+    -o-animation: fadein 3s;
+    /* Opera */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -119,7 +129,7 @@ hr {
 
 @media all and (min-width: 768px) {
   .menu {
-    width: 30%;
+    width: 90%;
   }
 }
 
@@ -159,7 +169,8 @@ hr {
 
 .menu__bloc:hover + .boxe-picto {
   width: 70px;
-  padding: 25px;
+  padding: 25px 0px;
+  text-align: center;
 }
 
 .menu__bloc:hover + .boxe-picto > .picto-anime {
@@ -234,5 +245,24 @@ hr {
 .bouton-menu {
   margin-bottom: 50px;
   text-align: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=menupage.css.map */
