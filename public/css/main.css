@@ -249,6 +249,7 @@ hr {
 @media all and (min-width: 768px) {
   .menu__bloc:hover + .boxe-picto {
     padding: 25px 0px;
+    width: 100px;
   }
 }
 
