@@ -242,8 +242,14 @@ hr {
 
 .menu__bloc:hover + .boxe-picto {
   width: 70px;
-  padding: 25px 0px;
+  padding: 17px 0px;
   text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .menu__bloc:hover + .boxe-picto {
+    padding: 25px 0px;
+  }
 }
 
 .menu__bloc:hover + .boxe-picto > .picto-anime {
@@ -253,10 +259,7 @@ hr {
 }
 
 .menu__bloc__texte {
-  /*width: 60%;*/
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 80%;
 }
 
 .menu__bloc__line {
@@ -264,19 +267,20 @@ hr {
 }
 
 .menu__bloc__line__name {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media all and (min-width: 768px) {
   .menu__bloc__line__name {
     font-size: 1.4rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
 
 .menu__bloc__line__commentair {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -290,8 +294,8 @@ hr {
 
 .menu__bloc__prix {
   font-weight: bold;
-  padding-top: 20px;
-  width: 10%;
+  padding-top: 17px;
+  /*width: 10%;*/
   font-size: 0.9rem;
 }
 

@@ -172,14 +172,17 @@ hr{
         text-decoration: none;
         color: #000;
         display: flex;
-        justify-content: space-between;
+       justify-content: space-between;
         padding: 10px;
 
         &:hover + .boxe-picto{
 
             width: 70px;
-            padding: 25px 0px;
+            padding: 17px 0px;
             text-align: center;
+            @media all and (min-width:768px) {
+                padding: 25px 0px;
+            }
                 
             & > .picto-anime{
     
@@ -192,7 +195,7 @@ hr{
 
         
         &__texte{
-            width: 90%;
+            width: 80%;
         }
         
         &__line{
@@ -201,13 +204,14 @@ hr{
 
             &__name{
 
-                font-size: 1rem;
+                font-size: 0.9rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
 
                 @media all and (min-width:768px) {
 
                     font-size: 1.4rem;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
 
                 }
 
@@ -215,7 +219,7 @@ hr{
 
             &__commentair{
 
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -234,8 +238,8 @@ hr{
         &__prix{
 
             font-weight: bold;
-            padding-top: 20px;
-            width: 10%;
+            padding-top: 17px;
+            /*width: 10%;*/
             font-size: 0.9rem;
 
             @media all and (min-width:768px) {
