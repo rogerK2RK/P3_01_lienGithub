@@ -121,12 +121,7 @@ body{
 
 .bloc-content-menu{
 
-    display: flex;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    background: #ffffff;
-    box-shadow:  5px 5px 10px #ebebeb,
-                    -5px -5px 10px #ffffff;
+   
 
 }
 
@@ -166,24 +161,23 @@ hr{
         width: 20px;
     }
 
-    &__bloc{
+    &__article{
 
-        width: 100%;
-        text-decoration: none;
-        color: #000;
         display: flex;
-       justify-content: space-between;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        background: #ffffff;
+        box-shadow:  5px 5px 10px #ebebeb,
+                        -5px -5px 10px #ffffff;
         padding: 10px;
 
-        &:hover + .boxe-picto{
+        &:hover > .boxe-picto{
 
-            width: 70px;
-            padding: 17px 0px;
+            transform: translateX(100%);
             text-align: center;
-            @media all and (min-width:768px) {
-                padding: 25px 0px;
-                width: 100px;
-            }
+            opacity: 1;
+            
                 
             & > .picto-anime{
     
@@ -196,7 +190,9 @@ hr{
 
         
         &__texte{
-            width: 80%;
+            width: 60%;
+            height: auto;
+            overflow: hidden;
         }
         
         &__line{
@@ -222,6 +218,7 @@ hr{
 
                 font-size: 0.8rem;
                 white-space: nowrap;
+                margin: 0px;
                 overflow: hidden;
                 text-overflow: ellipsis;
 
@@ -240,7 +237,8 @@ hr{
 
             font-weight: bold;
             padding-top: 17px;
-            /*width: 10%;*/
+            width: 20%;
+            text-align: end;
             font-size: 0.9rem;
 
             @media all and (min-width:768px) {
@@ -257,16 +255,27 @@ hr{
 
 
 .boxe-picto{
-        
-    
-    border-radius: 0px 10px 10px 0px;
+
     background-color: #99E2D0;
-    transform-origin: right 0%;
-    width: 0px;
-    transition: width 1000ms cubic-bezier(.32,0,.07,1);
+    color: #ffffff;
+    position:absolute;
+    width: 20%;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding-top: 18px;
+    margin-right: -20%;
+    transform: translateX(-100%);
+
+    @media all and (min-width:768px) {
+        padding-top: 27px;
+    }
 
     & .picto-anime{
-        font-size: 0px;
+        
         transform: rotate(-360deg);
         transition: transform 700ms ease-in-out;
         

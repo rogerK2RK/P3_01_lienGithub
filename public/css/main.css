@@ -182,17 +182,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.bloc-content-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
-}
-
 hr {
   border: 1px solid #99E2D0;
   width: 37px;
@@ -227,47 +216,43 @@ hr {
   width: 20px;
 }
 
-.menu__bloc {
-  width: 100%;
-  text-decoration: none;
-  color: #000;
+.menu__article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
   padding: 10px;
 }
 
-.menu__bloc:hover + .boxe-picto {
-  width: 70px;
-  padding: 17px 0px;
+.menu__article:hover > .boxe-picto {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   text-align: center;
+  opacity: 1;
 }
 
-@media all and (min-width: 768px) {
-  .menu__bloc:hover + .boxe-picto {
-    padding: 25px 0px;
-    width: 100px;
-  }
-}
-
-.menu__bloc:hover + .boxe-picto > .picto-anime {
+.menu__article:hover > .boxe-picto > .picto-anime {
   font-size: 18px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-.menu__bloc__texte {
-  width: 80%;
+.menu__article__texte {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
 }
 
-.menu__bloc__line {
+.menu__article__line {
   margin: 0px;
 }
 
-.menu__bloc__line__name {
+.menu__article__line__name {
   font-size: 0.9rem;
   white-space: nowrap;
   overflow: hidden;
@@ -275,50 +260,64 @@ hr {
 }
 
 @media all and (min-width: 768px) {
-  .menu__bloc__line__name {
+  .menu__article__line__name {
     font-size: 1.4rem;
   }
 }
 
-.menu__bloc__line__commentair {
+.menu__article__line__commentair {
   font-size: 0.8rem;
   white-space: nowrap;
+  margin: 0px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 @media all and (min-width: 768px) {
-  .menu__bloc__line__commentair {
+  .menu__article__line__commentair {
     font-size: 1.2rem;
   }
 }
 
-.menu__bloc__prix {
+.menu__article__prix {
   font-weight: bold;
   padding-top: 17px;
-  /*width: 10%;*/
+  width: 20%;
+  text-align: end;
   font-size: 0.9rem;
 }
 
 @media all and (min-width: 768px) {
-  .menu__bloc__prix {
+  .menu__article__prix {
     font-size: 1.3rem;
     padding-top: 24px;
   }
 }
 
 .boxe-picto {
-  border-radius: 0px 10px 10px 0px;
   background-color: #99E2D0;
-  -webkit-transform-origin: right 0%;
-          transform-origin: right 0%;
-  width: 0px;
-  -webkit-transition: width 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  transition: width 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  color: #ffffff;
+  position: absolute;
+  width: 20%;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding-top: 18px;
+  margin-right: -20%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+@media all and (min-width: 768px) {
+  .boxe-picto {
+    padding-top: 27px;
+  }
 }
 
 .boxe-picto .picto-anime {
-  font-size: 0px;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
   -webkit-transition: -webkit-transform 700ms ease-in-out;
@@ -414,7 +413,6 @@ hr {
   display: flex;
   position: absolute;
   left: -11px;
-  top: -3px;
   border-radius: 15px;
   color: #fff;
   background-color: #9356DC;
@@ -453,12 +451,6 @@ hr {
 .nav-boxe__text {
   font-size: 1rem;
   color: #000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-weight: bold;
 }
 
