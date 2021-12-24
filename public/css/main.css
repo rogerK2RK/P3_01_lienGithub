@@ -230,8 +230,8 @@ hr {
 }
 
 .menu__article:hover > .boxe-picto {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   text-align: center;
   opacity: 1;
 }
@@ -299,6 +299,7 @@ hr {
   color: #ffffff;
   position: absolute;
   width: 20%;
+  margin-right: -20%;
   top: 0px;
   bottom: 0px;
   right: 0px;
@@ -306,6 +307,13 @@ hr {
   border-bottom-right-radius: 10px;
   text-align: center;
   padding-top: 18px;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
 @media all and (min-width: 768px) {

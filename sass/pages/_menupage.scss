@@ -172,13 +172,12 @@ hr{
                         -5px -5px 10px #ffffff;
         padding: 10px;
 
-        &:hover > .boxe-picto{
+        &:hover > .boxe-picto {
 
-            transform: translateX(100%);
+            transform: translateX(-100%);
             text-align: center;
             opacity: 1;
             
-                
             & > .picto-anime{
     
                 font-size: 18px;
@@ -260,6 +259,7 @@ hr{
     color: #ffffff;
     position:absolute;
     width: 20%;
+    margin-right: -20%;
     top: 0px;
     bottom: 0px;
     right: 0px;
@@ -267,6 +267,9 @@ hr{
     border-bottom-right-radius: 10px;
     text-align: center;
     padding-top: 18px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 700ms ease-in-out;
 
     @media all and (min-width:768px) {
         padding-top: 27px;
