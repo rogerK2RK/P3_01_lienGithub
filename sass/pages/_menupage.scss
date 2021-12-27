@@ -163,20 +163,21 @@ hr{
 
     &__article{
 
+        display: -webkit-box;
+        overflow: hidden;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         border-radius: 10px;
         margin-bottom: 15px;
         background: #ffffff;
-        box-shadow:  5px 5px 10px #ebebeb,
-                        -5px -5px 10px #ffffff;
-        padding: 10px;
+        -webkit-box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
+        box-shadow: 5px 5px 10px #ebebeb, -5px -5px 10px #ffffff;
 
         &:hover > .boxe-picto {
 
-            transform: translateX(-100%);
+            margin-right: 0px;
             text-align: center;
-            opacity: 1;
             
             & > .picto-anime{
     
@@ -189,9 +190,8 @@ hr{
 
         
         &__texte{
-            width: 60%;
-            height: auto;
-            overflow: hidden;
+            width: 100%;
+            padding:10px;
         }
         
         &__line{
@@ -235,15 +235,14 @@ hr{
         &__prix{
 
             font-weight: bold;
-            padding-top: 17px;
-            width: 20%;
-            text-align: end;
-            font-size: 0.9rem;
+            float: 17px;
+            display: flex;
+            align-items: end;
+            padding: 10px 20px;
 
             @media all and (min-width:768px) {
 
                 font-size: 1.3rem;
-                padding-top: 24px;
 
             }
 
@@ -256,24 +255,14 @@ hr{
 .boxe-picto{
 
     background-color: #99E2D0;
+    margin-right: -55px;
     color: #ffffff;
-    position:absolute;
-    width: 20%;
-    margin-right: -20%;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
+    width: 60px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
     padding-top: 18px;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: transform 700ms ease-in-out;
-
-    @media all and (min-width:768px) {
-        padding-top: 27px;
-    }
+    transition: margin-right 700ms ease-in-out;
 
     & .picto-anime{
         
