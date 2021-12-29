@@ -541,7 +541,7 @@ body {
   right: 0px;
   left: 0px;
   top: 0px;
-  z-index: 99;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,7 +552,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #f8f8f8;
-  opacity: 1;
+  visibility: visible;
   -webkit-animation: loader 3s forwards;
           animation: loader 3s forwards;
 }
@@ -645,33 +645,31 @@ body {
 
 @-webkit-keyframes loader {
   0% {
-    display: -webkit-box;
-    display: flex;
+    visibility: visible;
+    z-index: 999;
   }
   99% {
-    display: -webkit-box;
-    display: flex;
+    visibility: visible;
+    z-index: 999;
   }
   100% {
-    display: none;
-    z-index: 1;
+    visibility: hidden;
+    z-index: 0;
   }
 }
 
 @keyframes loader {
   0% {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    visibility: visible;
+    z-index: 999;
   }
   99% {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    visibility: visible;
+    z-index: 999;
   }
   100% {
-    display: none;
-    z-index: 1;
+    visibility: hidden;
+    z-index: 0;
   }
 }
 
