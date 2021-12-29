@@ -76,13 +76,18 @@ body {
     box-sizing: border-box;
   }
   .center {
-    height: 100vh;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
     background: $color-grey-light;
-    display: none;
-    transition: display 3s ease-in-out;
+    opacity: 1;
+    animation: loader 3s forwards;
   }
   .wave {
     width: 5px;
@@ -129,5 +134,16 @@ body {
     }
     100% {
       transform: scale(0);
+    }
+  }
+  @keyframes loader{
+    0%{
+      display: flex;
+    }
+    99%{
+      display: flex;
+    }
+    100%{
+      display: none;
     }
   }
