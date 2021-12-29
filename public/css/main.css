@@ -136,8 +136,6 @@ body {
 @media all and (min-width: 768px) {
   .container__menus {
     position: relative;
-    bottom: 0px;
-    border-radius: 0px;
   }
 }
 
