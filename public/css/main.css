@@ -467,27 +467,6 @@ hr {
   color: #9356DC;
 }
 
-.menu__article:nth-child(1n) {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-}
-
-.menu__article:nth-child(2n) {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-}
-
-.menu__article:nth-child(3n) {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-}
-
 .move-1 {
   animation: fadein 2s;
   -moz-animation: fadein 2s;
@@ -518,30 +497,24 @@ hr {
   /* Opera */
 }
 
-@-webkit-keyframes slidein {
-  from {
-    margin-top: 25px;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-top: 25px;
-  }
-  to {
-    margin-top: 0%;
-  }
+.move-4 {
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  /* Firefox */
+  -webkit-animation: fadein 6s;
+  /* Safari and Chrome */
+  -o-animation: fadein 6s;
+  /* Opera */
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
+    margin-top: 25px;
   }
   to {
     opacity: 1;
+    margin-top: 0%;
   }
 }
 
@@ -549,9 +522,11 @@ hr {
   /* Safari and Chrome */
   from {
     opacity: 0;
+    margin-top: 25px;
   }
   to {
     opacity: 1;
+    margin-top: 0%;
   }
 }
 

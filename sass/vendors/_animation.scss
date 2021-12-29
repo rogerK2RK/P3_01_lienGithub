@@ -1,17 +1,4 @@
-.menu__article:nth-child(1n){
-    animation-duration: 2s;
-    animation-name: slidein;
-}
 
-.menu__article:nth-child(2n){
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
-.menu__article:nth-child(3n){
-    animation-duration: 4s;
-    animation-name: slidein;
-}
 
 .move-1 {
     animation: fadein 2s;
@@ -32,47 +19,52 @@
     -o-animation: fadein 5s; /* Opera */
 }
 
-  
-@keyframes slidein {
-    from {
-      margin-top: 25px;
-    }
-  
-    to {
-      margin-top: 0%;
-    }
+.move-4{
+    animation: fadein 6s;
+    -moz-animation: fadein 6s; /* Firefox */
+    -webkit-animation: fadein 6s; /* Safari and Chrome */
+    -o-animation: fadein 6s; /* Opera */
 }
+  
 
 @keyframes fadein {
     from {
         opacity:0;
+        margin-top: 25px;
     }
     to {
         opacity:1;
+        margin-top: 0%;
     }
 }
 @-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0;
+        margin-top: 25px;
     }
     to {
         opacity:1;
+        margin-top: 0%;
     }
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
     from {
         opacity:0;
+        margin-top: 25px;
     }
     to {
         opacity:1;
+        margin-top: 0%;
     }
 }
 @-o-keyframes fadein { /* Opera */
     from {
         opacity:0;
+        margin-top: 25px;
     }
     to {
-        opacity: 1;
+        opacity:1;
+        margin-top: 0%;
     }
 }
 
